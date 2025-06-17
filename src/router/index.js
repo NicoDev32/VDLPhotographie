@@ -5,7 +5,8 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 const routes = [
-  /*   {
+  /*
+  {
     path: "/",
     name: "Home",
     component: Home,
@@ -86,6 +87,15 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  // 🎯 Configuration pour scroll automatique en haut
+  scrollBehavior(to, from, savedPosition) {
+    // Si il y a une position sauvegardée (bouton retour), on la restaure
+    if (savedPosition) {
+      return savedPosition;
+    }
+    // Sinon, on scroll tout en haut
+    return { x: 0, y: 0 };
+  },
 });
 
 export default router;

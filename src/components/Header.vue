@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white shadow-md">
+  <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-4 py-4">
       <router-link to="/acceuil" class="flex items-center">
         <img src="@/assets/logo2.png" alt="Logo VLD" class="h-12 w-auto mr-3" />
