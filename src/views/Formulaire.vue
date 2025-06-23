@@ -39,10 +39,7 @@
                   type="text"
                   id="nom"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{
-                    'border-gray-300': !errors.nom,
-                    'border-red-500': errors.nom
-                  }"
+                  :class="{ 'border-gray-300': !errors.nom, 'border-red-500': errors.nom }"
                 />
                 <p v-if="errors.nom" class="text-sm text-red-500 mt-1">
                   Nom requis.
@@ -59,10 +56,7 @@
                   type="text"
                   id="prenom"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{
-                    'border-gray-300': !errors.prenom,
-                    'border-red-500': errors.prenom
-                  }"
+                  :class="{ 'border-gray-300': !errors.prenom, 'border-red-500': errors.prenom }"
                 />
                 <p v-if="errors.prenom" class="text-sm text-red-500 mt-1">
                   Prénom requis.
@@ -83,10 +77,7 @@
                   type="email"
                   id="email"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{
-                    'border-gray-300': !errors.email,
-                    'border-red-500': errors.email
-                  }"
+                  :class="{ 'border-gray-300': !errors.email, 'border-red-500': errors.email }"
                 />
                 <p v-if="errors.email" class="text-sm text-red-500 mt-1">
                   Email valide requis.
@@ -103,10 +94,7 @@
                   type="tel"
                   id="telephone"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{
-                    'border-gray-300': !errors.telephone,
-                    'border-red-500': errors.telephone
-                  }"
+                  :class="{ 'border-gray-300': !errors.telephone, 'border-red-500': errors.telephone }"
                 />
                 <p v-if="errors.telephone" class="text-sm text-red-500 mt-1">
                   Minimum 10 chiffres requis.
@@ -125,10 +113,7 @@
                 v-model="form.typeProjet"
                 id="typeProjet"
                 class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                :class="{
-                  'border-gray-300': !errors.typeProjet,
-                  'border-red-500': errors.typeProjet
-                }"
+                :class="{ 'border-gray-300': !errors.typeProjet, 'border-red-500': errors.typeProjet }"
               >
                 <option value="">Sélectionnez votre projet</option>
                 <option value="Mariage">Mariage</option>
@@ -156,15 +141,13 @@
                 id="message"
                 rows="4"
                 class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] resize-vertical"
-                :class="{
-                  'border-gray-300': !errors.message,
-                  'border-red-500': errors.message
-                }"
+                :class="{ 'border-gray-300': !errors.message, 'border-red-500': errors.message }"
               ></textarea>
               <p v-if="errors.message" class="text-sm text-red-500 mt-1">
                 Message requis.
               </p>
             </div>
+
             <!-- Politique de confidentialité -->
             <p class="text-sm text-center text-gray-600">
               En nous contactant, vous acceptez notre
@@ -354,17 +337,68 @@
       </div>
     </div>
 
+    <!-- Popup de chargement -->
+    <div
+      v-if="sending"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-sm mx-auto text-center"
+      >
+        <div class="flex flex-col items-center space-y-4">
+          <svg
+            class="animate-spin h-8 w-8 text-[#C2A191]"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8v4l3.5-3.5L12 0v4a8 8 0 100 16v-4l-3.5 3.5L12 24v-4a8 8 0 01-8-8z"
+            />
+          </svg>
+          <p class="text-[#2E2B29] font-semibold">Envoi du message...</p>
+          <p class="text-sm text-gray-500">Merci de patienter</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup succès -->
+    <div
+      v-if="successPopup"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-sm mx-auto text-center"
+      >
+        <h2 class="text-xl font-semibold text-[#2E2B29] mb-2">Merci 📬</h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Votre message a bien été transmis.
+        </p>
+        <p class="text-sm text-[#C2A191]">Redirection vers l'accueil...</p>
+      </div>
+    </div>
+
     <Footer />
   </main>
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Formulaire",
-  components: { Footer, Header },
+  components: { Header, Footer },
   data() {
     return {
       form: {
@@ -378,6 +412,7 @@ export default {
       errors: {},
       sending: false,
       showModal: false,
+      successPopup: false,
     };
   },
   computed: {
@@ -411,29 +446,27 @@ export default {
       if (Object.keys(this.errors).length > 0) return;
 
       this.sending = true;
+      this.successPopup = false;
 
       try {
         const response = await fetch(process.env.VUE_APP_ROUTE_POST_CONTACT, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify(this.form),
         });
 
         const data = await response.json();
         if (!response.ok) throw new Error(data.message || "Erreur lors de l'envoi.");
 
-        this.form = {
-          nom: "",
-          prenom: "",
-          email: "",
-          telephone: "",
-          typeProjet: "",
-          message: "",
-        };
+        this.form = { nom: "", prenom: "", email: "", telephone: "", typeProjet: "", message: "" };
+        this.successPopup = true;
+
+        setTimeout(() => {
+          this.$router.push("/accueil");
+        }, 2500);
       } catch (err) {
         console.error(err);
+        alert("Une erreur est survenue. Veuillez réessayer.");
       } finally {
         this.sending = false;
       }

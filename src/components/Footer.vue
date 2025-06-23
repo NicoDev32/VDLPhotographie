@@ -81,7 +81,7 @@
               </div>
               <a
                 href="mailto:Vdlphotographe@outlook.com"
-                class="text-lg font-medium text-[#C2A191] hover:text-[#D4B5A0] transition-colors duration-300"
+                class="text-lg font-medium text-[#C2A191] hover:text-[#D4B5A0] transition-all duration-300 transform hover:translate-x-1"
               >
                 Vdlphotographe@outlook.com
               </a>
@@ -190,7 +190,7 @@
                 📝 Contact
               </router-link>
             </li>
-            <li>
+            <li v-show="false">
               <a
                 href="#"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300"
@@ -198,7 +198,7 @@
                 Portfolio
               </a>
             </li>
-            <li>
+            <li v-show="false">
               <a
                 href="#"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300"
@@ -206,7 +206,7 @@
                 Témoignages
               </a>
             </li>
-            <li>
+            <li v-show="false">
               <a
                 href="#"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300"
