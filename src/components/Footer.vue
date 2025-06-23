@@ -176,7 +176,7 @@
           <ul class="space-y-3">
             <li>
               <router-link
-                to="/acceuil"
+                to="/accueil"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300"
               >
                 Accueil

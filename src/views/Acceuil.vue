@@ -183,87 +183,37 @@
           >
             <router-link
               to="/mariage"
-              class="group relative px-6 py-3 text-lg font-serif transition-all duration-300 hover:scale-105"
+              class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300"
             >
-              <span
-                class="relative z-10 text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300"
-              >
-                Mariage
-              </span>
-              <div
-                class="absolute inset-0 bg-[#C2A191]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"
-              ></div>
-              <div
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#C2A191] transition-all duration-300 group-hover:w-full group-hover:left-0"
-              ></div>
+              Mariage
             </router-link>
 
             <router-link
               to="/naissance"
-              class="group relative px-6 py-3 text-lg font-serif transition-all duration-300 hover:scale-105"
+              class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300"
             >
-              <span
-                class="relative z-10 text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300"
-              >
-                Naissance
-              </span>
-              <div
-                class="absolute inset-0 bg-[#C2A191]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"
-              ></div>
-              <div
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#C2A191] transition-all duration-300 group-hover:w-full group-hover:left-0"
-              ></div>
+              Naissance
             </router-link>
 
             <router-link
-              to="/bapteme"
-              class="group relative px-6 py-3 text-lg font-serif transition-all duration-300 hover:scale-105"
+              to="/famille"
+              class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300"
             >
-              <span
-                class="relative z-10 text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300"
-              >
-                Baptême
-              </span>
-              <div
-                class="absolute inset-0 bg-[#C2A191]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"
-              ></div>
-              <div
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#C2A191] transition-all duration-300 group-hover:w-full group-hover:left-0"
-              ></div>
+              Famille
             </router-link>
 
             <router-link
               to="/grossesse"
-              class="group relative px-6 py-3 text-lg font-serif transition-all duration-300 hover:scale-105"
+              class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300"
             >
-              <span
-                class="relative z-10 text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300"
-              >
-                Grossesse
-              </span>
-              <div
-                class="absolute inset-0 bg-[#C2A191]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"
-              ></div>
-              <div
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#C2A191] transition-all duration-300 group-hover:w-full group-hover:left-0"
-              ></div>
+              Grossesse
             </router-link>
 
             <router-link
               to="/portrait"
-              class="group relative px-6 py-3 text-lg font-serif transition-all duration-300 hover:scale-105"
+              class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300"
             >
-              <span
-                class="relative z-10 text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300"
-              >
-                Portrait
-              </span>
-              <div
-                class="absolute inset-0 bg-[#C2A191]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"
-              ></div>
-              <div
-                class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-[#C2A191] transition-all duration-300 group-hover:w-full group-hover:left-0"
-              ></div>
+              Portrait
             </router-link>
           </div>
         </div>
@@ -435,5 +385,26 @@ export default {
 
 .scroll-fade-in a:nth-child(4) {
   transition-delay: 0.4s;
+}
+
+.link-hover-effect {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.link-hover-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #C2A191;
+  transition: width 0.4s ease;
+}
+
+.link-hover-effect:hover::after {
+  width: 100%;
 }
 </style>

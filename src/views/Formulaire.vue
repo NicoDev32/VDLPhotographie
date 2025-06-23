@@ -165,6 +165,55 @@
                 Message requis.
               </p>
             </div>
+            <!-- Politique de confidentialité -->
+            <p class="text-sm text-center text-gray-600">
+              En nous contactant, vous acceptez notre
+              <button
+                type="button"
+                @click="showModal = true"
+                class="text-[#C2A191] underline hover:text-[#ad8e80] transition"
+              >
+                politique de confidentialité
+              </button>
+            </p>
+
+            <!-- Modale de politique de confidentialité -->
+            <div
+              v-if="showModal"
+              class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+            >
+              <div
+                class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-lg mx-auto relative"
+              >
+                <h2 class="text-xl font-semibold mb-4 text-[#2E2B29]">
+                  Politique de confidentialité
+                </h2>
+                <p class="text-sm text-gray-700 mb-6">
+                  Les données saisies sont envoyées par e-mail à VDLPhotographe
+                  afin de répondre à votre demande.
+                  <br /><br />Elles ne sont pas stockées sur le site et seront
+                  supprimées sous 6 mois.
+
+                  <br /><br />Aucune donnée n'est partagée à des tiers.
+
+                  <br /><br />
+                  <a
+                    href="mailto:Vdlphotographe@outlook.com"
+                    class="text-sm text-[#2E2B29] hover:text-[#C2A191] transition"
+                  >
+                    📧 Contact : Vdlphotographe@outlook.com
+                  </a>
+                </p>
+                <div class="text-right">
+                  <button
+                    @click="showModal = false"
+                    class="px-4 py-2 bg-[#2E2B29] rounded-md transition-all duration-300 transform hover:bg-[#443f3c] hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
 
             <!-- Boutons -->
             <div class="text-center pt-4">
@@ -328,6 +377,7 @@ export default {
       },
       errors: {},
       sending: false,
+      showModal: false,
     };
   },
   computed: {
