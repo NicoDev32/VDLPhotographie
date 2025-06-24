@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --disable-host-check",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -11,10 +11,9 @@
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "axios": "^0.27.1",
     "core-js": "^3.6.5",
-    "msnodesqlv8": "^4.5.0",
-    "mssql": "^11.0.1",
     "postcss-loader": "^4.3.0",
     "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

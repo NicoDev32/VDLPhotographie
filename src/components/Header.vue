@@ -2,8 +2,8 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-4 py-4">
       <router-link to="/accueil" class="flex items-center">
-        <img src="@/assets/logo2.png" alt="Logo VLD" class="h-12 w-auto mr-3" />
-        <span class="text-xl font-bold text-gray-800">VLD Photographe</span>
+        <img src="@/assets/logo2.png" alt="Logo VDL" class="h-12 w-auto mr-3" />
+        <span class="text-xl font-bold text-gray-800">VDL Photographe</span>
       </router-link>
 
       <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">

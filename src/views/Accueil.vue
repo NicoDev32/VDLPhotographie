@@ -1,5 +1,5 @@
 <template>
-  <div class="acceuil bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
+  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
     <Header />
 
     <!-- Hero Section compact -->
@@ -270,7 +270,7 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "Acceuil",
+  name: "Accueil",
   components: { Header, Footer },
 
   mounted() {
@@ -282,20 +282,20 @@ export default {
     initAnimations() {
       // Animation d'apparition pour les éléments du hero
       setTimeout(() => {
-        const heroTitle = document.querySelector('.hero-title');
-        const heroLogo = document.querySelector('.hero-logo');
-        const heroSubtitle = document.querySelector('.hero-subtitle');
-        const heroSlogan = document.querySelector('.hero-slogan');
+        const heroTitle = document.querySelector(".hero-title");
+        const heroLogo = document.querySelector(".hero-logo");
+        const heroSubtitle = document.querySelector(".hero-subtitle");
+        const heroSlogan = document.querySelector(".hero-slogan");
 
-        if (heroTitle) heroTitle.classList.add('animate-in');
+        if (heroTitle) heroTitle.classList.add("animate-in");
         setTimeout(() => {
-          if (heroLogo) heroLogo.classList.add('animate-in');
+          if (heroLogo) heroLogo.classList.add("animate-in");
         }, 300);
         setTimeout(() => {
-          if (heroSubtitle) heroSubtitle.classList.add('animate-in');
+          if (heroSubtitle) heroSubtitle.classList.add("animate-in");
         }, 600);
         setTimeout(() => {
-          if (heroSlogan) heroSlogan.classList.add('animate-in');
+          if (heroSlogan) heroSlogan.classList.add("animate-in");
         }, 900);
       }, 100);
     },
@@ -303,22 +303,22 @@ export default {
     setupScrollObserver() {
       const options = {
         threshold: 0.2,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: "0px 0px -50px 0px",
       };
 
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
+            entry.target.classList.add("animate-in");
           }
         });
       }, options);
 
       // Observer tous les éléments avec la classe scroll-fade-in
-      const scrollElements = document.querySelectorAll('.scroll-fade-in');
-      scrollElements.forEach(el => observer.observe(el));
-    }
-  }
+      const scrollElements = document.querySelectorAll(".scroll-fade-in");
+      scrollElements.forEach((el) => observer.observe(el));
+    },
+  },
 };
 </script>
 
@@ -400,7 +400,7 @@ export default {
   bottom: -2px;
   width: 0%;
   height: 2px;
-  background-color: #C2A191;
+  background-color: #c2a191;
   transition: width 0.4s ease;
 }
 

@@ -22,10 +22,7 @@
             Formulaire de contact
           </h2>
 
-          <form
-            class="space-y-4"
-            @submit.prevent="formulaireEstRempli ? envoyerContact() : validerFormulaire()"
-          >
+          <form class="space-y-4" @submit.prevent="gererSubmit()">
             <!-- Nom et prénom -->
             <div class="grid md:grid-cols-2 gap-4">
               <div>
@@ -39,9 +36,12 @@
                   type="text"
                   id="nom"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{ 'border-gray-300': !errors.nom, 'border-red-500': errors.nom }"
+                  :class="{
+                    'border-gray-300': !errorsComputed.nom,
+                    'border-red-500': errorsComputed.nom,
+                  }"
                 />
-                <p v-if="errors.nom" class="text-sm text-red-500 mt-1">
+                <p v-if="errorsComputed.nom" class="text-sm text-red-500 mt-1">
                   Nom requis.
                 </p>
               </div>
@@ -56,9 +56,15 @@
                   type="text"
                   id="prenom"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{ 'border-gray-300': !errors.prenom, 'border-red-500': errors.prenom }"
+                  :class="{
+                    'border-gray-300': !errorsComputed.prenom,
+                    'border-red-500': errorsComputed.prenom,
+                  }"
                 />
-                <p v-if="errors.prenom" class="text-sm text-red-500 mt-1">
+                <p
+                  v-if="errorsComputed.prenom"
+                  class="text-sm text-red-500 mt-1"
+                >
                   Prénom requis.
                 </p>
               </div>
@@ -77,9 +83,15 @@
                   type="email"
                   id="email"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{ 'border-gray-300': !errors.email, 'border-red-500': errors.email }"
+                  :class="{
+                    'border-gray-300': !errorsComputed.email,
+                    'border-red-500': errorsComputed.email,
+                  }"
                 />
-                <p v-if="errors.email" class="text-sm text-red-500 mt-1">
+                <p
+                  v-if="errorsComputed.email"
+                  class="text-sm text-red-500 mt-1"
+                >
                   Email valide requis.
                 </p>
               </div>
@@ -94,9 +106,15 @@
                   type="tel"
                   id="telephone"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                  :class="{ 'border-gray-300': !errors.telephone, 'border-red-500': errors.telephone }"
+                  :class="{
+                    'border-gray-300': !errorsComputed.telephone,
+                    'border-red-500': errorsComputed.telephone,
+                  }"
                 />
-                <p v-if="errors.telephone" class="text-sm text-red-500 mt-1">
+                <p
+                  v-if="errorsComputed.telephone"
+                  class="text-sm text-red-500 mt-1"
+                >
                   Minimum 10 chiffres requis.
                 </p>
               </div>
@@ -113,7 +131,10 @@
                 v-model="form.typeProjet"
                 id="typeProjet"
                 class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
-                :class="{ 'border-gray-300': !errors.typeProjet, 'border-red-500': errors.typeProjet }"
+                :class="{
+                  'border-gray-300': !errorsComputed.typeProjet,
+                  'border-red-500': errorsComputed.typeProjet,
+                }"
               >
                 <option value="">Sélectionnez votre projet</option>
                 <option value="Mariage">Mariage</option>
@@ -124,7 +145,10 @@
                 <option value="Portrait">Portrait</option>
                 <option value="Autre">Autre</option>
               </select>
-              <p v-if="errors.typeProjet" class="text-sm text-red-500 mt-1">
+              <p
+                v-if="errorsComputed.typeProjet"
+                class="text-sm text-red-500 mt-1"
+              >
                 Sélection obligatoire.
               </p>
             </div>
@@ -141,9 +165,15 @@
                 id="message"
                 rows="4"
                 class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] resize-vertical"
-                :class="{ 'border-gray-300': !errors.message, 'border-red-500': errors.message }"
+                :class="{
+                  'border-gray-300': !errorsComputed.message,
+                  'border-red-500': errorsComputed.message,
+                }"
               ></textarea>
-              <p v-if="errors.message" class="text-sm text-red-500 mt-1">
+              <p
+                v-if="errorsComputed.message"
+                class="text-sm text-red-500 mt-1"
+              >
                 Message requis.
               </p>
             </div>
@@ -201,21 +231,18 @@
             <!-- Boutons -->
             <div class="text-center pt-4">
               <button
-                v-if="formulaireEstRempli"
                 type="submit"
                 class="w-full md:w-auto bg-[#C2A191] hover:bg-[#ad8e80] font-semibold px-8 py-3 rounded-md transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg border-2 border-[#C2A191] hover:border-[#ad8e80]"
-                style="color: #2E2B29;"
+                :class="{
+                  'opacity-50 cursor-not-allowed': !formulaireEstRempli,
+                }"
+                style="color: #2e2b29"
               >
-                📧 Envoyer le message
-              </button>
-              <button
-                v-else
-                type="button"
-                disabled
-                class="w-full md:w-auto bg-[#C2A191] font-semibold px-8 py-3 rounded-md border-2 border-[#C2A191] opacity-50 cursor-not-allowed shadow-md"
-                style="color: #2E2B29;"
-              >
-                🚫 Formulaire incomplet
+                {{
+                  formulaireEstRempli
+                    ? "📧 Envoyer le message"
+                    : "🚫 Formulaire incomplet"
+                }}
               </button>
             </div>
           </form>
@@ -324,7 +351,7 @@
               class="w-full h-64 md:h-80"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.1704724645214!2d6.059655615574469!3d49.265739579327464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794d189b6907dff%3A0xbfc2732c02ad5ce1!2sClouange%2C%2057150%20France!5e0!3m2!1sfr!2sfr!4v1718818320670!5m2!1sfr!2sfr"
               frameborder="0"
-              style="border:0;"
+              style="border: 0"
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
@@ -413,6 +440,8 @@ export default {
       sending: false,
       showModal: false,
       successPopup: false,
+      // Flag pour savoir si l'utilisateur a déjà tenté de soumettre
+      tentativeSubmit: true, // ACTIVÉ dès le début
     };
   },
   computed: {
@@ -426,24 +455,124 @@ export default {
         this.form.message.trim()
       );
     },
+    // Computed pour les erreurs en temps réel
+    errorsComputed() {
+      const errors = {};
+      if (!this.form.nom.trim()) errors.nom = true;
+      if (!this.form.prenom.trim()) errors.prenom = true;
+      if (!this.form.email.trim() || !this.validerEmail(this.form.email))
+        errors.email = true;
+      if (
+        !this.form.telephone ||
+        this.form.telephone.replace(/\D/g, "").length < 10
+      )
+        errors.telephone = true;
+      if (!this.form.typeProjet.trim()) errors.typeProjet = true;
+      if (!this.form.message.trim()) errors.message = true;
+      return errors;
+    },
+  },
+  // Valider dès le montage du composant
+  mounted() {
+    this.validerFormulaire();
+  },
+  // Watchers pour validation en temps réel
+  watch: {
+    "form.nom": function () {
+      if (this.tentativeSubmit) this.validerChamp("nom");
+    },
+    "form.prenom": function () {
+      if (this.tentativeSubmit) this.validerChamp("prenom");
+    },
+    "form.email": function () {
+      if (this.tentativeSubmit) this.validerChamp("email");
+    },
+    "form.telephone": function () {
+      if (this.tentativeSubmit) this.validerChamp("telephone");
+    },
+    "form.typeProjet": function () {
+      if (this.tentativeSubmit) this.validerChamp("typeProjet");
+    },
+    "form.message": function () {
+      if (this.tentativeSubmit) this.validerChamp("message");
+    },
   },
   methods: {
     validerEmail(email) {
       const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return re.test(email);
     },
-    validerFormulaire() {
-      this.errors = {};
-      if (!this.form.nom.trim()) this.errors.nom = true;
-      if (!this.form.prenom.trim()) this.errors.prenom = true;
-      if (!this.form.email.trim() || !this.validerEmail(this.form.email)) this.errors.email = true;
-      if (!this.form.telephone || this.form.telephone.replace(/\D/g, "").length < 10) this.errors.telephone = true;
-      if (!this.form.typeProjet.trim()) this.errors.typeProjet = true;
-      if (!this.form.message.trim()) this.errors.message = true;
+
+    // Validation d'un champ spécifique
+    validerChamp(nomChamp) {
+      // Supprimer l'erreur existante
+      this.$delete(this.errors, nomChamp);
+
+      switch (nomChamp) {
+        case "nom":
+          if (!this.form.nom.trim()) {
+            this.$set(this.errors, "nom", true);
+          }
+          break;
+        case "prenom":
+          if (!this.form.prenom.trim()) {
+            this.$set(this.errors, "prenom", true);
+          }
+          break;
+        case "email":
+          if (!this.form.email.trim() || !this.validerEmail(this.form.email)) {
+            this.$set(this.errors, "email", true);
+          }
+          break;
+        case "telephone":
+          if (
+            !this.form.telephone ||
+            this.form.telephone.replace(/\D/g, "").length < 10
+          ) {
+            this.$set(this.errors, "telephone", true);
+          }
+          break;
+        case "typeProjet":
+          if (!this.form.typeProjet.trim()) {
+            this.$set(this.errors, "typeProjet", true);
+          }
+          break;
+        case "message":
+          if (!this.form.message.trim()) {
+            this.$set(this.errors, "message", true);
+          }
+          break;
+      }
     },
+
+    validerFormulaire() {
+      // IMPORTANT: Activer tentativeSubmit AVANT la validation
+      this.tentativeSubmit = true;
+
+      // Réinitialiser les erreurs
+      this.errors = {};
+
+      // Valider tous les champs
+      if (!this.form.nom.trim()) this.$set(this.errors, "nom", true);
+      if (!this.form.prenom.trim()) this.$set(this.errors, "prenom", true);
+      if (!this.form.email.trim() || !this.validerEmail(this.form.email))
+        this.$set(this.errors, "email", true);
+      if (
+        !this.form.telephone ||
+        this.form.telephone.replace(/\D/g, "").length < 10
+      )
+        this.$set(this.errors, "telephone", true);
+      if (!this.form.typeProjet.trim())
+        this.$set(this.errors, "typeProjet", true);
+      if (!this.form.message.trim()) this.$set(this.errors, "message", true);
+
+      return Object.keys(this.errors).length === 0;
+    },
+
     async envoyerContact() {
-      this.validerFormulaire();
-      if (Object.keys(this.errors).length > 0) return;
+      if (!this.validerFormulaire()) {
+        return; // Arrêter si validation échoue
+      }
 
       this.sending = true;
       this.successPopup = false;
@@ -456,9 +585,19 @@ export default {
         });
 
         const data = await response.json();
-        if (!response.ok) throw new Error(data.message || "Erreur lors de l'envoi.");
+        if (!response.ok)
+          throw new Error(data.message || "Erreur lors de l'envoi.");
 
-        this.form = { nom: "", prenom: "", email: "", telephone: "", typeProjet: "", message: "" };
+        this.form = {
+          nom: "",
+          prenom: "",
+          email: "",
+          telephone: "",
+          typeProjet: "",
+          message: "",
+        };
+        this.errors = {};
+        this.tentativeSubmit = false;
         this.successPopup = true;
 
         setTimeout(() => {
@@ -469,6 +608,17 @@ export default {
         alert("Une erreur est survenue. Veuillez réessayer.");
       } finally {
         this.sending = false;
+      }
+    },
+
+    // Méthode pour gérer le clic sur le bouton
+    gererSubmit() {
+      // TOUJOURS déclencher la validation d'abord
+      this.validerFormulaire();
+
+      // Puis envoyer seulement si tout est valide
+      if (this.formulaireEstRempli && Object.keys(this.errors).length === 0) {
+        this.envoyerContact();
       }
     },
   },

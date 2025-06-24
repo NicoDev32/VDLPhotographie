@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps pour tous les domaines
+Sitemap: https://vdlphotographe.fr/sitemap.xml
+Sitemap: https://vdlphotographe.com/sitemap.xml
+Sitemap: https://vdlphotographe.lu/sitemap.xml
+
+# Bloquer les fichiers sensibles
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
