@@ -20,7 +20,7 @@
             class="text-3xl md:text-5xl lg:text-6xl font-serif tracking-wide leading-tight mb-4 hero-title"
           >
             <span class="block text-[#2E2B29]"> VALERIA DANIELE </span>
-            <span class="block text-[#2E2B29] mt-1"> GUERRIN </span>
+            <span class="block text-[#2E2B29] mt-1"> LEONARDI </span>
           </h1>
 
           <!-- Logo intégré élégamment -->

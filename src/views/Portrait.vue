@@ -343,10 +343,10 @@
         <div
           class="bg-gradient-to-r from-[#C2A191] to-[#ad8e80] rounded-2xl p-8 md:p-12 scroll-fade-in"
         >
-          <h3 class="text-2xl md:text-3xl font-serif text-white mb-4">
+          <h3 class="text-2xl md:text-3xl font-serif mb-4">
             Prêt pour votre séance portrait ?
           </h3>
-          <p class="text-lg text-white mb-8 opacity-90">
+          <p class="text-lg mb-8 opacity-90">
             Discutons de vos idées et créons ensemble le portrait qui vous
             ressemble
           </p>

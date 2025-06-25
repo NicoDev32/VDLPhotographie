@@ -360,10 +360,10 @@
       <div class="absolute inset-0 bg-black/20"></div>
 
       <div class="relative z-10 max-w-4xl mx-auto text-center scroll-fade-in">
-        <h2 class="text-4xl md:text-6xl font-serif text-white mb-6">
+        <h2 class="text-4xl md:text-6xl font-serif mb-6">
           Votre Jour J Mérite l'Excellence
         </h2>
-        <p class="text-xl md:text-2xl text-white mb-8 opacity-90">
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
           Ensemble, créons des souvenirs qui traverseront les générations
         </p>
 
@@ -390,7 +390,7 @@
 
           <a
             href="tel:+33619037490"
-            class="inline-flex items-center px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[#C2A191] font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
+            class="inline-flex items-center px-8 py-4 border-2 border-white hover:bg-white hover:text-[#C2A191] font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
           >
             <svg
               class="mr-3 w-5 h-5"
@@ -409,7 +409,7 @@
           </a>
         </div>
 
-        <p class="text-sm mt-8 text-white opacity-75">
+        <p class="text-sm mt-8 opacity-75">
           📞 Réponse sous 24h • 💝 Devis personnalisé gratuit • 📍 Moselle &
           alentours
         </p>

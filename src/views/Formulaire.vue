@@ -223,7 +223,7 @@
                 <div class="text-right">
                   <button
                     @click="showModal = false"
-                    class="px-4 py-2 bg-[#2E2B29] text-white rounded-md transition-all duration-300 transform hover:bg-[#443f3c] hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
+                    class="px-4 py-2 bg-[#2E2B29] rounded-md transition-all duration-300 transform hover:bg-[#443f3c] hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                   >
                     Fermer
                   </button>

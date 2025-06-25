@@ -7,7 +7,7 @@
           alt="Logo VDL"
           class="h-12 w-auto mr-3"
         />
-        <span class="text-xl font-bold text-gray-800">VDL Photographe</span>
+        <span class="text-xl font-serif text-gray-800">VDL Photographe</span>
       </router-link>
 
       <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
