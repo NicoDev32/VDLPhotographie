@@ -19,7 +19,7 @@
         <div class="lg:col-span-2">
           <div class="mb-8">
             <h3 class="text-3xl md:text-4xl font-serif mb-4 text-[#C2A191]">
-              VALERIA LEONARDI
+              VALERIA DANIELE LEONARDI
             </h3>
             <p
               class="text-lg text-[#D4B5A0] font-light tracking-[0.2em] uppercase mb-4"
@@ -190,13 +190,13 @@
                 📝 Contact
               </router-link>
             </li>
-            <li v-show="false">
-              <a
-                href="#"
-                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300"
+            <li>
+              <router-link
+                to="/apropos"
+                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 font-medium"
               >
-                Portfolio
-              </a>
+                👩‍💼📷 À propos
+              </router-link>
             </li>
             <li v-show="false">
               <a

@@ -7,7 +7,12 @@
           alt="Logo VDL"
           class="h-12 w-auto mr-3"
         />
-        <span class="text-xl font-serif text-gray-800">VDL Photographe</span>
+        <div class="flex flex-col leading-tight">
+          <span class="text-3xl font-signature text-gray-500">Vdl</span>
+          <span class="text-xs tracking-widest text-gray-500 uppercase"
+            >Photographe</span
+          >
+        </div>
       </router-link>
 
       <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
@@ -35,6 +40,12 @@
           to="/portrait"
           class="text-gray-800 text-lg font-semibold hover:text-rose-400 transition-colors duration-300"
           >Portrait</router-link
+        >
+
+        <router-link
+          to="/apropos"
+          class="text-gray-800 text-lg font-semibold hover:text-rose-400 transition-colors duration-300"
+          >À propos</router-link
         >
         <router-link
           to="/formulaire"
@@ -113,6 +124,12 @@
           class="hover:text-pink-500"
           >Portrait</router-link
         >
+        <router-link
+          @click="closeMenu"
+          to="/apropos"
+          class="hover:text-pink-500"
+          >À propos
+        </router-link>
         <router-link
           @click="closeMenu"
           to="/formulaire"

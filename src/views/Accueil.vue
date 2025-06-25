@@ -56,8 +56,10 @@
           <h2
             class="text-2xl md:text-3xl lg:text-4xl font-serif leading-relaxed hero-slogan"
           >
-            <span class="block text-[#2E2B29]">Capturing Moments,</span>
-            <span class="block text-[#C2A191] mt-1">Telling Stories</span>
+            <span class="block text-[#2E2B29]">Capturer des Moments,</span>
+            <span class="block text-[#C2A191] mt-1"
+              >Raconter des Histoires</span
+            >
           </h2>
         </div>
       </div>
@@ -70,7 +72,7 @@
           <h3
             class="text-2xl md:text-3xl font-serif text-center mb-6 md:mb-10 text-[#2E2B29] scroll-fade-in"
           >
-            Portfolio Highlights
+            Histoires en Images
           </h3>
 
           <!-- Grille responsive avec effets -->
