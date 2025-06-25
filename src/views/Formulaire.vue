@@ -2,20 +2,23 @@
   <main class="bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
     <Header />
 
-    <!-- Hero -->
+    <!-- Hero avec animations -->
     <section class="text-center py-8 px-4">
-      <h1 class="text-4xl md:text-5xl font-serif tracking-wide mb-2">
+      <h1 class="text-4xl md:text-5xl font-serif tracking-wide mb-2 hero-title">
         CONTACT
       </h1>
-      <p class="text-lg tracking-[0.3em] font-semibold">
+      <p class="text-lg tracking-[0.3em] font-semibold hero-subtitle">
         PARLONS DE VOTRE PROJET
       </p>
     </section>
 
-    <!-- Formulaire -->
-    <div class="max-w-7xl mx-auto px-4 pb-16 overflow-hidden">
+    <!-- Formulaire avec animations -->
+    <div
+      class="max-w-7xl mx-auto px-4 pb-16 overflow-hidden"
+      ref="formulaireSection"
+    >
       <div class="grid lg:grid-cols-2 gap-8 w-full">
-        <div class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+        <div class="bg-white rounded-lg shadow-xl p-6 md:p-8 scroll-fade-in">
           <h2
             class="text-2xl md:text-3xl font-serif text-[#C2A191] mb-6 text-center"
           >
@@ -35,7 +38,7 @@
                   v-model="form.nom"
                   type="text"
                   id="nom"
-                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
+                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
                   :class="{
                     'border-gray-300': !errorsComputed.nom,
                     'border-red-500': errorsComputed.nom,
@@ -55,7 +58,7 @@
                   v-model="form.prenom"
                   type="text"
                   id="prenom"
-                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
+                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
                   :class="{
                     'border-gray-300': !errorsComputed.prenom,
                     'border-red-500': errorsComputed.prenom,
@@ -82,7 +85,7 @@
                   v-model="form.email"
                   type="email"
                   id="email"
-                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
+                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
                   :class="{
                     'border-gray-300': !errorsComputed.email,
                     'border-red-500': errorsComputed.email,
@@ -105,7 +108,7 @@
                   v-model="form.telephone"
                   type="tel"
                   id="telephone"
-                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
+                  class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
                   :class="{
                     'border-gray-300': !errorsComputed.telephone,
                     'border-red-500': errorsComputed.telephone,
@@ -130,7 +133,7 @@
               <select
                 v-model="form.typeProjet"
                 id="typeProjet"
-                class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8]"
+                class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
                 :class="{
                   'border-gray-300': !errorsComputed.typeProjet,
                   'border-red-500': errorsComputed.typeProjet,
@@ -164,7 +167,7 @@
                 v-model="form.message"
                 id="message"
                 rows="4"
-                class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] resize-vertical"
+                class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] resize-vertical transition-all duration-300"
                 :class="{
                   'border-gray-300': !errorsComputed.message,
                   'border-red-500': errorsComputed.message,
@@ -196,7 +199,7 @@
               class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
             >
               <div
-                class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-lg mx-auto relative"
+                class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-lg mx-auto relative modal-enter"
               >
                 <h2 class="text-xl font-semibold mb-4 text-[#2E2B29]">
                   Politique de confidentialité
@@ -220,7 +223,7 @@
                 <div class="text-right">
                   <button
                     @click="showModal = false"
-                    class="px-4 py-2 bg-[#2E2B29] rounded-md transition-all duration-300 transform hover:bg-[#443f3c] hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
+                    class="px-4 py-2 bg-[#2E2B29] text-white rounded-md transition-all duration-300 transform hover:bg-[#443f3c] hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
                   >
                     Fermer
                   </button>
@@ -248,18 +251,17 @@
           </form>
         </div>
 
-        <!-- Partie droite (infos + carte) non modifiée -->
-        <!-- Informations de contact et Google Map -->
+        <!-- Informations de contact et Google Map avec animations -->
         <div class="space-y-6 w-full overflow-hidden">
           <div
-            class="bg-white rounded-lg shadow-xl p-6 md:p-8 w-full overflow-hidden"
+            class="bg-white rounded-lg shadow-xl p-6 md:p-8 w-full overflow-hidden scroll-fade-in"
           >
             <h3 class="text-2xl font-serif text-[#C2A191] mb-6 text-center">
               Informations de contact
             </h3>
             <div class="space-y-6">
               <!-- Email -->
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4 scroll-fade-in">
                 <div
                   class="w-12 h-12 bg-[#C2A191] rounded-full flex items-center justify-center"
                 >
@@ -289,7 +291,7 @@
               </div>
 
               <!-- Téléphone -->
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4 scroll-fade-in">
                 <div
                   class="w-12 h-12 bg-[#C2A191] rounded-full flex items-center justify-center"
                 >
@@ -319,7 +321,7 @@
               </div>
 
               <!-- Localisation -->
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4 scroll-fade-in">
                 <div
                   class="w-12 h-12 bg-[#C2A191] rounded-full flex items-center justify-center"
                 >
@@ -345,8 +347,8 @@
             </div>
           </div>
 
-          <!-- Google Map -->
-          <div class="rounded-lg overflow-hidden shadow-xl">
+          <!-- Google Map avec animations -->
+          <div class="rounded-lg overflow-hidden shadow-xl scroll-fade-in">
             <iframe
               class="w-full h-64 md:h-80"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.1704724645214!2d6.059655615574469!3d49.265739579327464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794d189b6907dff%3A0xbfc2732c02ad5ce1!2sClouange%2C%2057150%20France!5e0!3m2!1sfr!2sfr!4v1718818320670!5m2!1sfr!2sfr"
@@ -364,10 +366,10 @@
       </div>
     </div>
 
-    <!-- Popup de chargement -->
+    <!-- Popup de chargement avec animations -->
     <div
       v-if="sending"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 popup-enter"
     >
       <div
         class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-sm mx-auto text-center"
@@ -399,10 +401,10 @@
       </div>
     </div>
 
-    <!-- Popup succès -->
+    <!-- Popup succès avec animations -->
     <div
       v-if="successPopup"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 popup-enter"
     >
       <div
         class="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-sm mx-auto text-center"
@@ -444,6 +446,7 @@ export default {
       tentativeSubmit: true, // ACTIVÉ dès le début
     };
   },
+
   computed: {
     formulaireEstRempli() {
       return (
@@ -472,10 +475,16 @@ export default {
       return errors;
     },
   },
-  // Valider dès le montage du composant
+
   mounted() {
+    // ✨ Initialiser les animations
+    this.initAnimations();
+    this.setupScrollObserver();
+
+    // Valider dès le montage du composant
     this.validerFormulaire();
   },
+
   // Watchers pour validation en temps réel
   watch: {
     "form.nom": function () {
@@ -497,7 +506,41 @@ export default {
       if (this.tentativeSubmit) this.validerChamp("message");
     },
   },
+
   methods: {
+    // 🎬 Animation des éléments du hero au chargement
+    initAnimations() {
+      setTimeout(() => {
+        const heroTitle = document.querySelector(".hero-title");
+        const heroSubtitle = document.querySelector(".hero-subtitle");
+
+        if (heroTitle) heroTitle.classList.add("animate-in");
+        setTimeout(() => {
+          if (heroSubtitle) heroSubtitle.classList.add("animate-in");
+        }, 300);
+      }, 100);
+    },
+
+    // 🌊 Observer pour les animations au scroll
+    setupScrollObserver() {
+      const options = {
+        threshold: 0.2,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, options);
+
+      // Observer tous les éléments avec la classe scroll-fade-in
+      const scrollElements = document.querySelectorAll(".scroll-fade-in");
+      scrollElements.forEach((el) => observer.observe(el));
+    },
+
     validerEmail(email) {
       const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return re.test(email);
@@ -624,3 +667,99 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Animations d'apparition initiales pour le hero */
+.hero-title,
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.hero-title.animate-in,
+.hero-subtitle.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations de scroll */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-fade-in.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation décalée pour les éléments de contact */
+.scroll-fade-in:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.scroll-fade-in:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.scroll-fade-in:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.scroll-fade-in:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Animations pour les modales et popups */
+.modal-enter {
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+.popup-enter {
+  animation: popupFadeIn 0.4s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Transitions fluides pour les champs de formulaire */
+.w-full.px-4.py-3 {
+  transition: all 0.3s ease;
+}
+
+.w-full.px-4.py-3:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(194, 161, 145, 0.2);
+}
+
+/* Animation du bouton submit */
+button[type="submit"] {
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover:not(.opacity-50) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(194, 161, 145, 0.3);
+}
+</style>

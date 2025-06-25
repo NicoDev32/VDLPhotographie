@@ -4,7 +4,7 @@
   >
     <Header />
 
-    <!-- Hero Section Magnifique -->
+    <!-- Hero Section Magnifique avec animations -->
     <section class="relative py-16 md:py-24 px-4">
       <!-- Decorative elements -->
       <div class="absolute inset-0 opacity-10">
@@ -20,7 +20,7 @@
         <!-- Main title with elegant animation -->
         <div class="mb-8">
           <h1
-            class="text-6xl md:text-8xl lg:text-9xl font-serif tracking-wider mb-6 relative"
+            class="text-6xl md:text-8xl lg:text-9xl font-serif tracking-wider mb-6 relative hero-title"
           >
             <span
               class="block bg-gradient-to-r from-[#2E2B29] via-[#C2A191] to-[#2E2B29] bg-clip-text leading-none"
@@ -33,13 +33,13 @@
           </h1>
 
           <p
-            class="text-xl md:text-2xl text-[#C2A191] font-light tracking-[0.3em] uppercase mb-2"
+            class="text-xl md:text-2xl text-[#C2A191] font-light tracking-[0.3em] uppercase mb-2 hero-subtitle"
           >
             L'Art de Capturer l'Amour
           </p>
 
           <p
-            class="text-lg md:text-xl text-[#2E2B29]/70 font-light italic max-w-3xl mx-auto leading-relaxed"
+            class="text-lg md:text-xl text-[#2E2B29]/70 font-light italic max-w-3xl mx-auto leading-relaxed hero-description"
           >
             "Chaque regard, chaque sourire, chaque larme de joie... Votre
             journée la plus précieuse mérite d'être immortalisée avec poésie."
@@ -48,11 +48,11 @@
       </div>
     </section>
 
-    <!-- Galerie Compacte et Élégante -->
-    <section class="py-16 px-4">
+    <!-- Galerie Compacte et Élégante avec animations -->
+    <section class="py-16 px-4" ref="galerieSection">
       <div class="max-w-7xl mx-auto">
         <!-- Title de section -->
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 scroll-fade-in">
           <h2 class="text-4xl md:text-5xl font-serif text-[#2E2B29] mb-4">
             Moments Éternels
           </h2>
@@ -63,11 +63,11 @@
           </p>
         </div>
 
-        <!-- Grid Compact 4 colonnes -->
+        <!-- Grid Compact 4 colonnes avec animations -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           <!-- Image 1 -->
           <div
-            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500"
+            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 scroll-fade-in"
           >
             <img
               src="@/assets/mariage1.jpg"
@@ -80,14 +80,14 @@
             <div
               class="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3 class="text-sm font-serif mb-1">L'Émotion Pure</h3>
-              <p class="text-xs opacity-90">Capturer l'essence</p>
+              <h3 class="text-sm font-serif mb-1 text-white">L'Émotion Pure</h3>
+              <p class="text-xs opacity-90 text-white">Capturer l'essence</p>
             </div>
           </div>
 
           <!-- Image 2 -->
           <div
-            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500"
+            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 scroll-fade-in"
           >
             <img
               src="@/assets/mariage2.jpg"
@@ -100,21 +100,16 @@
             <div
               class="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3
-                class="text-sm font-serif mb-1"
-                style="color: white !important;"
-              >
+              <h3 class="text-sm font-serif mb-1 text-white">
                 Détails Précieux
               </h3>
-              <p class="text-xs opacity-90" style="color: white !important;">
-                Votre histoire
-              </p>
+              <p class="text-xs opacity-90 text-white">Votre histoire</p>
             </div>
           </div>
 
           <!-- Image 3 -->
           <div
-            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500"
+            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 scroll-fade-in"
           >
             <img
               src="@/assets/mariage3.jpg"
@@ -127,21 +122,14 @@
             <div
               class="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3
-                class="text-sm font-serif mb-1"
-                style="color: white !important;"
-              >
-                Savoir-Faire
-              </h3>
-              <p class="text-xs opacity-90" style="color: white !important;">
-                Approche artistique
-              </p>
+              <h3 class="text-sm font-serif mb-1 text-white">Savoir-Faire</h3>
+              <p class="text-xs opacity-90 text-white">Approche artistique</p>
             </div>
           </div>
 
           <!-- Image 4 -->
           <div
-            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500"
+            class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 scroll-fade-in"
           >
             <img
               src="@/assets/mariage4.jpg"
@@ -154,25 +142,21 @@
             <div
               class="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
             >
-              <h3
-                class="text-sm font-serif mb-1"
-                style="color: white !important;"
-              >
-                Complicité
-              </h3>
-              <p class="text-xs opacity-90" style="color: white !important;">
-                Amour éternel
-              </p>
+              <h3 class="text-sm font-serif mb-1 text-white">Complicité</h3>
+              <p class="text-xs opacity-90 text-white">Amour éternel</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section Services Mariage -->
-    <section class="py-20 px-4 bg-white/50 backdrop-blur-sm">
+    <!-- Section Services Mariage avec animations -->
+    <section
+      class="py-20 px-4 bg-white/50 backdrop-blur-sm"
+      ref="collectionsSection"
+    >
       <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 scroll-fade-in">
           <h2 class="text-4xl md:text-5xl font-serif text-[#2E2B29] mb-4">
             Collections Mariage
           </h2>
@@ -186,7 +170,7 @@
         <div class="grid lg:grid-cols-3 gap-8">
           <!-- Collection AFFETTO -->
           <div
-            class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden"
+            class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden scroll-fade-in"
           >
             <div
               class="absolute inset-0 bg-gradient-to-br from-[#C2A191]/5 to-[#E6C7B8]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -246,7 +230,7 @@
 
           <!-- Collection TENEREZZA -->
           <div
-            class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden border-2 border-[#C2A191]"
+            class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden border-2 border-[#C2A191] scroll-fade-in"
           >
             <div
               class="absolute -top-4 -right-4 bg-[#C2A191] text-white px-6 py-2 rounded-full text-sm font-semibold transform rotate-12"
@@ -307,7 +291,7 @@
 
           <!-- Collection AMORE -->
           <div
-            class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden"
+            class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden scroll-fade-in"
           >
             <div
               class="absolute inset-0 bg-gradient-to-br from-[#C2A191]/5 to-[#E6C7B8]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -368,25 +352,25 @@
       </div>
     </section>
 
-    <!-- CTA Final Spectaculaire -->
-    <section class="py-20 px-4 relative overflow-hidden">
+    <!-- CTA Final Spectaculaire avec animations -->
+    <section class="py-20 px-4 relative overflow-hidden" ref="ctaSection">
       <div
         class="absolute inset-0 bg-gradient-to-r from-[#C2A191] via-[#E6C7B8] to-[#C2A191]"
       ></div>
       <div class="absolute inset-0 bg-black/20"></div>
 
-      <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl md:text-6xl font-serif mb-6">
+      <div class="relative z-10 max-w-4xl mx-auto text-center scroll-fade-in">
+        <h2 class="text-4xl md:text-6xl font-serif text-white mb-6">
           Votre Jour J Mérite l'Excellence
         </h2>
-        <p class="text-xl md:text-2xl mb-8 opacity-90">
+        <p class="text-xl md:text-2xl text-white mb-8 opacity-90">
           Ensemble, créons des souvenirs qui traverseront les générations
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <router-link
             to="/formulaire"
-            class="inline-flex items-center px-8 py-4 bg-white hover:bg-gray-100 font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
+            class="inline-flex items-center px-8 py-4 bg-white text-[#C2A191] hover:bg-gray-100 font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             Réserver votre séance
             <svg
@@ -405,13 +389,13 @@
           </router-link>
 
           <a
-            href="tel:+33123456789"
-            class="inline-flex items-center px-8 py-4 border-2 border-white hover:bg-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
+            href="tel:+33619037490"
+            class="inline-flex items-center px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[#C2A191] font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
           >
             <svg
               class="mr-3 w-5 h-5"
               fill="none"
-              stroke="white"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
               <path
@@ -425,7 +409,7 @@
           </a>
         </div>
 
-        <p class="text-sm mt-8 opacity-75">
+        <p class="text-sm mt-8 text-white opacity-75">
           📞 Réponse sous 24h • 💝 Devis personnalisé gratuit • 📍 Moselle &
           alentours
         </p>
@@ -442,10 +426,124 @@ import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Mariage",
-  components: { Header, Footer }
+  components: { Header, Footer },
+
+  mounted() {
+    // ✨ Initialiser les animations
+    this.initAnimations();
+    this.setupScrollObserver();
+  },
+
+  methods: {
+    // 🎬 Animation des éléments du hero au chargement
+    initAnimations() {
+      setTimeout(() => {
+        const heroTitle = document.querySelector(".hero-title");
+        const heroSubtitle = document.querySelector(".hero-subtitle");
+        const heroDescription = document.querySelector(".hero-description");
+
+        if (heroTitle) heroTitle.classList.add("animate-in");
+        setTimeout(() => {
+          if (heroSubtitle) heroSubtitle.classList.add("animate-in");
+        }, 400);
+        setTimeout(() => {
+          if (heroDescription) heroDescription.classList.add("animate-in");
+        }, 800);
+      }, 200);
+    },
+
+    // 🌊 Observer pour les animations au scroll
+    setupScrollObserver() {
+      const options = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, options);
+
+      // Observer tous les éléments avec la classe scroll-fade-in
+      const scrollElements = document.querySelectorAll(".scroll-fade-in");
+      scrollElements.forEach((el) => observer.observe(el));
+    },
+  },
 };
 </script>
 
 <style scoped>
-/* Aucun style CSS ici car tout est géré par Tailwind CSS */
+/* Animations d'apparition initiales pour le hero */
+.hero-title,
+.hero-subtitle,
+.hero-description {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.hero-title.animate-in,
+.hero-subtitle.animate-in,
+.hero-description.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations de scroll */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease-out;
+}
+
+.scroll-fade-in.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation décalée pour les éléments de galerie */
+.scroll-fade-in:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.scroll-fade-in:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.scroll-fade-in:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.scroll-fade-in:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Animation spéciale pour les collections */
+.grid .scroll-fade-in:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.grid .scroll-fade-in:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.grid .scroll-fade-in:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+/* Animation plus lente pour le hero mariage */
+.hero-title {
+  transition-duration: 1.2s;
+}
+
+.hero-subtitle {
+  transition-duration: 1s;
+}
+
+.hero-description {
+  transition-duration: 0.8s;
+}
 </style>
