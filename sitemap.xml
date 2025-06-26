@@ -3,14 +3,13 @@
   
   <!-- Page d'accueil -->
   <url>
-    <loc>https://vdlphotographe.fr/accueil</loc>
+    <loc>https://vdlphotographe.fr</loc>
     <lastmod>2025-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <!-- Liens vers les autres domaines -->
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/accueil"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/accueil"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/accueil"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com"/>
   </url>
   
   <!-- Services -->
@@ -20,7 +19,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/mariage"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/mariage"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/mariage"/>
   </url>
   
@@ -30,7 +28,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/grossesse"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/grossesse"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/grossesse"/>
   </url>
   
@@ -40,7 +37,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/famille"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/famille"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/famille"/>
   </url>
   
@@ -50,7 +46,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/portrait"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/portrait"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/portrait"/>
   </url>
   
@@ -60,7 +55,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/naissance"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/naissance"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/naissance"/>
   </url>
   
@@ -71,8 +65,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/formulaire"/>
-    <xhtml:link rel="alternate" hreflang="fr-LU" href="https://vdlphotographe.lu/formulaire"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/formulaire"/>
+  </url>
+
+  <!-- A propos -->
+    <url>
+    <loc>https://vdlphotographe.fr/apropos</loc>
+    <lastmod>2025-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/apropos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/apropos"/>
   </url>
   
 </urlset>

@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-4 py-4">
-      <router-link to="/accueil" class="flex items-center">
+      <router-link to="/" class="flex items-center">
         <img
           src="@/assets/logo_vdl_png.png"
           alt="Logo VDL"

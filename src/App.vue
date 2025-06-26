@@ -25,56 +25,58 @@ export default {
     pageTitle() {
       // Mapping des routes vers titres
       const titles = {
-        "/accueil": "Accueil - Photographe Professionnel",
+        "/": "Accueil - Photographe Professionnel",
         "/mariage": "Photographie de Mariage",
         "/grossesse": "Photos de Grossesse et Maternité",
         "/famille": "Photos de Famille",
         "/portrait": "Photos Portrait Professionnel",
         "/naissance": "Photos de Naissance et Nouveau-né",
         "/formulaire": "Contact et Devis",
+        "/apropos": "Qui suis-je ?",
       };
       return titles[this.$route.path] || "Photographe Professionnel";
     },
     pageDescription() {
       // Mapping des routes vers descriptions
       const descriptions = {
-        "/accueil":
-          "VLD Photographe - Photographe professionnel à Clouange. Spécialiste en mariage, grossesse, famille, portrait et naissance. Services en France et Luxembourg.",
+        "/": "VDL Photographe - Photographe professionnel à Clouange. Spécialiste en mariage, grossesse, famille, portrait et naissance. Services en France et Luxembourg.",
         "/mariage":
-          "Photographe de mariage à Clouange, Moselle et Luxembourg. Immortalisez votre jour J avec VLD Photographe. Portfolio et tarifs disponibles.",
+          "Photographe de mariage à Clouange, Moselle et Luxembourg. Immortalisez votre jour J avec VDL Photographe. Portfolio et tarifs disponibles.",
         "/grossesse":
-          "Séance photo grossesse à Clouange et Luxembourg. Capturez cette période unique avec VLD Photographe. Photos maternité tendres et artistiques.",
+          "Séance photo grossesse à Clouange et Luxembourg. Capturez cette période unique avec VDL Photographe. Photos maternité tendres et artistiques.",
         "/famille":
-          "Séances photo famille à Clouange et région Luxembourg. Portraits familiaux naturels et authentiques par VLD Photographe.",
+          "Séances photo famille à Clouange et région Luxembourg. Portraits familiaux naturels et authentiques par VDL Photographe.",
         "/portrait":
-          "Séances portrait professionnel et artistique à Clouange. Révélez votre personnalité avec VLD Photographe. Studio et extérieur.",
+          "Séances portrait professionnel et artistique à Clouange. Révélez votre personnalité avec VDL Photographe. Studio et extérieur.",
         "/naissance":
-          "Séances photo nouveau-né à Clouange et Luxembourg. Immortalisez les premiers jours de bébé avec VLD Photographe. Sécurité et douceur garanties.",
+          "Séances photo nouveau-né à Clouange et Luxembourg. Immortalisez les premiers jours de bébé avec VDL Photographe. Sécurité et douceur garanties.",
         "/formulaire":
-          "Contactez VLD Photographe pour votre projet photo à Clouange et Luxembourg. Devis gratuit pour mariage, grossesse, famille, portrait et naissance.",
+          "Contactez VDL Photographe pour votre projet photo à Clouange et Luxembourg. Devis gratuit pour mariage, grossesse, famille, portrait et naissance.",
+        "/apropos": "Qui suis-je et pourquoi vous devriez me faire confiance.",
       };
       return (
         descriptions[this.$route.path] ||
-        "VLD Photographe - Photographe professionnel à Clouange spécialisé en mariage, grossesse, famille, portrait et naissance. Capturez vos moments précieux en France et Luxembourg."
+        "VDL Photographe - Photographe professionnel à Clouange spécialisé en mariage, grossesse, famille, portrait et naissance. Capturez vos moments précieux en France et Luxembourg."
       );
     },
     pageKeywords() {
       // Mapping des routes vers mots-clés
       const keywords = {
-        "/accueil":
-          "VLD Photographe, photographe Clouange, photographe Luxembourg, mariage, grossesse, famille, portrait, naissance",
+        "/": "VDL Photographe, photographe Clouange, photographe Luxembourg, mariage, grossesse, famille, portrait, naissance, leonardi, Moselle",
         "/mariage":
-          "photographe mariage, mariage Clouange, photographe mariage Luxembourg, photos mariage Moselle, wedding photographer",
+          "photographe mariage, mariage Clouange, photographe mariage Luxembourg, photos mariage Moselle, wedding photographer, leonardi, Moselle",
         "/grossesse":
-          "photo grossesse, séance maternité, photographe grossesse Clouange, photos femme enceinte Luxembourg",
+          "photo grossesse, séance maternité, photographe grossesse Clouange, photos femme enceinte Luxembourg, leonardi, Moselle",
         "/famille":
-          "photo famille, portrait famille, séance photo famille Clouange, photographe famille Luxembourg",
+          "photo famille, portrait famille, séance photo famille Clouange, photographe famille Luxembourg, leonardi, Moselle",
         "/portrait":
-          "photo portrait, portrait professionnel, séance portrait Clouange, photographe portrait Luxembourg",
+          "photo portrait, portrait professionnel, séance portrait Clouange, photographe portrait Luxembourg, leonardi, Moselle",
         "/naissance":
-          "photo naissance, nouveau-né, séance photo bébé, photographe naissance Clouange, newborn Luxembourg",
+          "photo naissance, nouveau-né, séance photo bébé, photographe naissance Clouange, newborn Luxembourg, leonardi, Moselle",
         "/formulaire":
-          "contact photographe, devis photo, réservation séance photo, Clouange, Luxembourg, VLD Photographe",
+          "contact photographe, devis photo, réservation séance photo, Clouange, Luxembourg, VDL Photographe, leonardi, Moselle",
+        "/apropos":
+          "contact photographe, devis photo, réservation séance photo, Clouange, Luxembourg, VDL Photographe, valeria daniele leonardi, Moselle",
       };
       return (
         keywords[this.$route.path] ||
@@ -86,23 +88,23 @@ export default {
     return {
       // Titre dynamique selon la page
       title: this.pageTitle,
-      titleTemplate: "%s | VLD Photographe",
+      titleTemplate: "%s | VDL Photographe",
 
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "description", content: this.pageDescription },
         { name: "keywords", content: this.pageKeywords },
-        { name: "author", content: "VLD Photographe" },
+        { name: "author", content: "VDL Photographe" },
         { name: "robots", content: "index, follow" },
 
         // Open Graph dynamique
-        { property: "og:site_name", content: "VLD Photographe" },
+        { property: "og:site_name", content: "VDL Photographe" },
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "fr_FR" },
         {
           property: "og:title",
-          content: `${this.pageTitle} | VLD Photographe`,
+          content: `${this.pageTitle} | VDL Photographe`,
         },
         { property: "og:description", content: this.pageDescription },
         { property: "og:url", content: this.canonicalUrl },
@@ -115,7 +117,7 @@ export default {
         { name: "twitter:card", content: "summary_large_image" },
         {
           name: "twitter:title",
-          content: `${this.pageTitle} | VLD Photographe`,
+          content: `${this.pageTitle} | VDL Photographe`,
         },
         { name: "twitter:description", content: this.pageDescription },
         {
@@ -129,7 +131,7 @@ export default {
           innerHTML: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "VLD Photographe",
+            name: "VDL Photographe",
             description:
               "Photographe professionnel spécialisé en mariage, grossesse, famille, portrait et naissance",
             url: `https://${this.currentDomain}`,
@@ -204,11 +206,7 @@ export default {
                 },
               ],
             },
-            sameAs: [
-              `https://vdlphotographe.fr`,
-              `https://vdlphotographe.com`,
-              `https://vdlphotographe.lu`,
-            ],
+            sameAs: [`https://vdlphotographe.fr`, `https://vdlphotographe.com`],
           }),
         },
       ],
@@ -222,11 +220,6 @@ export default {
           rel: "alternate",
           hreflang: "fr-FR",
           href: `https://vdlphotographe.fr${this.$route.path}`,
-        },
-        {
-          rel: "alternate",
-          hreflang: "fr-LU",
-          href: `https://vdlphotographe.lu${this.$route.path}`,
         },
         {
           rel: "alternate",

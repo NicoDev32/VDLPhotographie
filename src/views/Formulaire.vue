@@ -644,7 +644,7 @@ export default {
         this.successPopup = true;
 
         setTimeout(() => {
-          this.$router.push("/accueil");
+          this.$router.push("/");
         }, 2500);
       } catch (err) {
         console.error(err);
