@@ -1,103 +1,71 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  /*
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" "../views/About.vue"),
-  }, */
   {
     path: "/",
     name: "Accueil",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Accueil.vue"),
+      import(/* webpackChunkName: "accueil" */ "../views/Accueil.vue"),
   },
   {
     path: "/formulaire",
     name: "Formulaire",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Formulaire.vue"),
+      import(/* webpackChunkName: "formulaire" */ "../views/Formulaire.vue"),
   },
   {
     path: "/mariage",
     name: "Mariage",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Mariage.vue"),
+      import(/* webpackChunkName: "mariage" */ "../views/Mariage.vue"),
   },
   {
     path: "/grossesse",
     name: "Grossesse",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Grossesse.vue"),
+      import(/* webpackChunkName: "grossesse" */ "../views/Grossesse.vue"),
   },
   {
     path: "/famille",
     name: "Famille",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Famille.vue"),
+      import(/* webpackChunkName: "famille" */ "../views/Famille.vue"),
   },
   {
     path: "/portrait",
     name: "Portrait",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Portrait.vue"),
+      import(/* webpackChunkName: "portrait" */ "../views/Portrait.vue"),
   },
   {
     path: "/naissance",
     name: "Naissance",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Naissance.vue"),
+      import(/* webpackChunkName: "naissance" */ "../views/Naissance.vue"),
   },
   {
     path: "/apropos",
     name: "APropos",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/APropos.vue"),
+      import(/* webpackChunkName: "apropos" */ "../views/APropos.vue"),
+  },
+  // Route 404 - à mettre en dernier
+  {
+    path: "*",
+    redirect: "/",
   },
 ];
 
 const router = new VueRouter({
+  mode: "history", // 🎯 Ajout du mode history pour supprimer le #
   routes,
-  // 🎯 Configuration pour scroll automatique en haut
   scrollBehavior(to, from, savedPosition) {
-    // Si il y a une position sauvegardée (bouton retour), on la restaure
     if (savedPosition) {
       return savedPosition;
     }
-    // Sinon, on scroll tout en haut
     return { x: 0, y: 0 };
   },
 });
