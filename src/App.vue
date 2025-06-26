@@ -238,7 +238,7 @@ export default {
 </script>
 
 <style lang="scss">
-// Assurer que le body prend toute la hauteur pour le sticky header
+// assurer que le body prend toute la hauteur pour le sticky header
 html,
 body {
   height: 100%;
