@@ -37,7 +37,7 @@ export default {
       return titles[this.$route.path] || "Photographe Professionnel";
     },
     pageDescription() {
-      // Mapping des routes vers descriptions
+      // mapping des routes vers descriptions
       const descriptions = {
         "/": "VDL Photographe - Photographe professionnel à Clouange. Spécialiste en mariage, grossesse, famille, portrait et naissance. Services en France et Luxembourg.",
         "/mariage":
