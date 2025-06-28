@@ -23,29 +23,71 @@
         <p
           class="text-lg md:text-xl text-[#2E2B29]/80 leading-relaxed hero-subtitle"
         >
-          L'histoire derrière l'objectif
+          Hello toi qui lis cette page !
         </p>
       </div>
     </section>
 
     <!-- Biographie et valeurs -->
+    <!-- Nouveau contenu texte -->
     <section class="py-8 md:py-16 px-4 relative">
       <div class="max-w-5xl mx-auto space-y-8 text-center scroll-fade-in">
         <p class="text-lg md:text-xl leading-relaxed font-light">
-          Je suis <span class="font-semibold">Valeria Daniele Leonardi</span>,
-          photographe passionnée, installée à <strong>Clouange</strong>. Depuis
-          plusieurs années, je capture les émotions sincères, les instants
-          fugaces et les souvenirs impérissables.
+          Moi, c'est <span class="font-semibold">Valeria</span> - photographe
+          (pas de surprise !), maman de deux petites tornades adorables (mes V
+          au carré, Valentina & Victoria), et amoureuse des belles histoires à
+          immortaliser !
         </p>
-        <p class="text-lg md:text-xl leading-relaxed font-light">
-          Mon approche repose sur la douceur, l’authenticité et la lumière
-          naturelle. Chaque séance est pensée comme un moment unique, à votre
-          image.
+
+        <p>
+          Bon, on se raconte un peu ma vie ? Promis, c'est pas long (ou
+          presque).
         </p>
-        <p class="text-lg md:text-xl leading-relaxed font-light">
-          Que ce soit pour immortaliser un mariage, la naissance d’un enfant, ou
-          simplement une parenthèse de vie en famille, mon objectif est de
-          révéler la beauté de chaque histoire.
+
+        <h2 class="text-2xl font-semibold mt-8">Au départ…</h2>
+        <p>
+          Je fais un Master en RH et je bosse dans le recrutement.<br />
+          La photo ? Juste un hobby… jusqu'en 2016, où je craque pour mon tout
+          premier reflex et un objectif. Et là, c'est le coup de foudre !<br />
+          Je binge 1, 2, 3... 59 tutos YouTube (#passionphoto), et je tombe en
+          amour avec l'image, la vraie.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8">Enceinte et déterminée !</h2>
+        <p>
+          Enceinte de 7 mois (oui, oui !), je décide de passer mon BEP
+          Photographie.<br />
+          Merci le Covid (pour une fois…) qui m'a permis de bosser à fond sur
+          mes cours.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8">
+          Janvier 2023 : c'est parti !
+        </h2>
+        <p>
+          Je me lance officiellement. Premières demandes : grossesse, naissance,
+          famille…<br />
+          Puis on me fait confiance pour des mariages (le stress, mais surtout
+          l'émotion pure).<br />
+          Je découvre aussi le bonheur des mini-sessions à thème — et je te le
+          dis : j'adooooore Noël ! 🎄✨
+        </p>
+        <p>
+          Sans oublier les séances en crèche, où je fonds devant toutes ces
+          petites bouilles trop mignonnes. 🧸
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8">Ce que je fais aujourd'hui</h2>
+        <p>
+          Je capture vos moments les plus précieux et j'en fais des souvenirs
+          inoubliables.<br />
+          Des images qui vous ressemblent, qui racontent votre histoire, avec le
+          cœur. 🫶🏻
+        </p>
+
+        <p>
+          Alors voilà, maintenant tu sais un peu qui je suis.<br />
+          Et toi, tu veux qu'on écrive un bout de ton histoire ensemble ? 📷💫
         </p>
       </div>
     </section>
@@ -74,7 +116,7 @@
     >
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-2xl md:text-3xl font-serif mb-6 scroll-fade-in">
-          Une vision guidée par l’émotion
+          Une vision guidée par l'émotion
         </h2>
         <p
           class="text-lg md:text-xl text-[#2E2B29]/80 leading-relaxed scroll-fade-in"
