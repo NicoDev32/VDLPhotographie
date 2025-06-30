@@ -43,7 +43,7 @@
           <p
             class="text-lg md:text-xl tracking-[0.4em] font-semibold text-[#C2A191] uppercase hero-subtitle"
           >
-            Photographe
+            Photographe Moselle et alentours
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@
           <h3
             class="text-2xl md:text-3xl font-serif text-center mb-6 md:mb-10 text-[#2E2B29] scroll-fade-in"
           >
-            Histoires en Images
+            Vos Histoires En Image
           </h3>
 
           <!-- Grille responsive avec effets -->
@@ -176,7 +176,7 @@
           <h3
             class="text-2xl md:text-3xl font-serif text-center mb-8 md:mb-12 text-[#2E2B29] scroll-fade-in"
           >
-            Nos Spécialités
+            Mes univers préférés
           </h3>
 
           <!-- Navigation responsive -->
@@ -232,19 +232,18 @@
           <h3
             class="text-3xl md:text-4xl font-serif mb-6 text-[#2E2B29] scroll-fade-in"
           >
-            Prêt à créer vos souvenirs ?
+            Prêt à raconter votre histoire ?
           </h3>
           <p
             class="text-lg md:text-xl text-[#2E2B29]/80 mb-8 leading-relaxed scroll-fade-in"
           >
-            Contactez-nous dès aujourd'hui pour discuter de votre projet
-            photographique unique
+            Contactez-moi dès aujourd'hui, j'ai hâte d'en savoir plus !
           </p>
           <router-link
             to="/formulaire"
             class="inline-flex items-center px-10 py-4 bg-[#2E2B29] hover:bg-[#2E2B29]/90 font-semibold text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl scroll-fade-in"
           >
-            Nous contacter
+            Me contacter
             <svg
               class="ml-3 w-5 h-5"
               fill="none"
