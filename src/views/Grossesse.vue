@@ -137,24 +137,43 @@
 
               <div class="prose prose-lg">
                 <p class="text-lg leading-relaxed mb-6 text-[#2E2B29]">
-                  Afin de prendre rendez-vous, il vous suffit de vous rendre sur
-                  ma page
+                  On prépare votre séance tout en douceur Pour réserver votre
+                  séance, rien de plus simple : direction la page
                   <router-link
                     to="/formulaire"
                     class="text-[#C2A191] hover:text-[#ad8e80] font-semibold underline transition-colors duration-300"
                   >
-                    contact
-                  </router-link>
-                  et de remplir le formulaire avec la collection de votre choix.
-                  L'idéal serait de prendre rendez-vous lors du 7ème mois de
-                  grossesse.
+                    contact </router-link
+                  >. Remplissez le formulaire en choisissant la collection qui
+                  vous fait envie. Idéalement, pour une séance grossesse, le 7e
+                  mois est parfait… alors n'attendez pas trop pour bloquer la
+                  date. Avant notre rendez-vous, on prendra un petit moment pour
+                  échanger par téléphone : on discutera de vos envies, de ce que
+                  vous adorez (et de ce que vous aimez moins) afin de créer une
+                  séance sur-mesure et surtout 100% vous. Et pour que tout se
+                  passe dans la bonne humeur : un petit mot magique… la
+                  ponctualité.
                 </p>
 
                 <p class="text-lg leading-relaxed mb-6 text-[#2E2B29]">
-                  Le jour de votre venue nous discuterons brièvement de vos
-                  souhaits et de vos envies. Afin que la séance se passe dans la
-                  plus grande sérénité, merci de bien vouloir respecter
-                  l'horaire donné.
+                  Pendant la séance : lâcher-prise & bonne humeur ! Le plus
+                  important ? Soyez vous-même. Pas besoin de savoir poser, je
+                  suis là pour vous guider tout au long de la séance. Faites-moi
+                  confiance! Et en extérieur, c'est possible aussi ! Envie d'un
+                  cadre naturel pour vos photos ? C'est tout à fait possible !
+                  Je vous propose un lieu charmant à proximité du studio, et
+                  pour cette parenthèse en plein air, un supplément de 25€ sera
+                  appliqué pour une séance d'1 heure en extérieur.
+                </p>
+
+                <p class="text-lg leading-relaxed mb-6 text-[#2E2B29]">
+                  Après la séance, vous recevrez un lien vers une galerie privée
+                  sur mon site avec une sélection de photos brutes. Prenez le
+                  temps de faire votre sélection, tout en gardant en tête un
+                  petit délai idéal de 7 à 10 jours - cela me permet de
+                  finaliser vos retouches au plus vite et de vous livrer vos
+                  souvenirs sans tarder. Une fois les retouches terminées, vos
+                  jolies photos vous seront envoyées via SWISSTransfer.
                 </p>
               </div>
             </div>
@@ -165,7 +184,7 @@
                 class="text-2xl font-serif text-[#C2A191] mb-6 flex items-center"
               >
                 <span class="mr-3">👗</span>
-                Tenues à prévoir
+                Côté tenues : simples, jolies et qui vous ressemblent !
               </h3>
 
               <div class="space-y-4">
@@ -179,23 +198,23 @@
                       blanc et/ou noir
                     </li>
                     <li class="flex items-center">
-                      <span class="text-[#C2A191] mr-2">✔️</span> Jean qui ne se
-                      ferme pas
+                      <span class="text-[#C2A191] mr-2">✔️</span> Un jean (celui
+                      qui ne ferme plus)
                     </li>
                     <li class="flex items-center">
                       <span class="text-[#C2A191] mr-2">✔️</span> Chemisier
                       blanc ou noir
                     </li>
                     <li class="flex items-center">
-                      <span class="text-[#C2A191] mr-2">✔️</span> Sous-vêtements
-                      adaptés
+                      <span class="text-[#C2A191] mr-2">✔️</span> Des
+                      sous-vêtements (blancs, noirs ou couleur peau)
                     </li>
                     <li class="flex items-center">
-                      <span class="text-[#C2A191] mr-2">✔️</span> Accessoire
-                      bébé (doudou, chaussons)
+                      <span class="text-[#C2A191] mr-2">✔️</span> Un ou deux
+                      accessoires bébé si vous le souhaitez (chaussons, doudou…)
                     </li>
                     <li class="flex items-center">
-                      <span class="text-[#C2A191] mr-2">✔️</span> 1 tenue que
+                      <span class="text-[#C2A191] mr-2">✔️</span> Une tenue que
                       vous adorez porter
                     </li>
                   </ul>
@@ -206,9 +225,27 @@
                     Pour Papa & les enfants :
                   </h4>
                   <p class="text-[#2E2B29]">
-                    Chemise ou t-shirt noir/blanc, jean. Il faut que vous soyez
-                    raccord avec votre moitié. Pour les enfants : tenues
-                    assorties 😊
+                    Petit + : Je mets également à votre disposition des tenues,
+                    voilages et accessoires spécialement pensés pour sublimer
+                    les courbes et les émotions. Pas besoin de prévoir une
+                    garde-robe complète, on compose ensemble ! Ce sont
+                    simplement des petits conseils pour vous guider — si vous
+                    n'avez pas tout, pas de panique, on s'adapte et tout se
+                    passera à merveille, promis !
+                  </p>
+                  <!-- Ligne décorative de séparation -->
+                  <div
+                    class="flex justify-center items-center my-6 animate-fade-in-slow"
+                  >
+                    <span class="text-2xl mr-2">👨‍👩‍👧‍👦</span>
+                    <div class="w-20 h-0.5 bg-[#C2A191] rounded-full"></div>
+                    <span class="text-2xl ml-2">👕</span>
+                  </div>
+                  <p class="text-[#2E2B29]">
+                    Un t-shirt ou une chemise blanche ou noire, un jean… et
+                    l'idée, c'est que tout le monde soit raccord. Pour les
+                    enfants, des tenues assorties suffisent à faire des
+                    merveilles 😊.
                   </p>
                 </div>
               </div>
@@ -256,7 +293,7 @@
                     Si vous souhaitez réaliser des clichés à l'extérieur
                     également c'est tout à fait possible. Le lieu sera choisi
                     par mes soins aux alentours du studio et un supplément de
-                    45€ sera facturé pour 1 heure.
+                    25€ sera facturé pour 1 heure.
                   </p>
                 </div>
               </div>
@@ -283,7 +320,7 @@
                   <h3 class="font-semibold text-[#C2A191] mb-2">Livraison</h3>
                   <p class="text-[#2E2B29] leading-relaxed">
                     Une fois les photos retouchées, elles vous seront transmises
-                    via WETRANSFER. Photos supplémentaires : 9€ la photo.
+                    via WETRANSFER. Photos supplémentaires : 12€ la photo.
                   </p>
                 </div>
               </div>
@@ -316,7 +353,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance en studio d'1h30 / Maman seule
+                    Séance en studio d'1h00 / Maman seule
                   </p>
                 </div>
 
@@ -329,7 +366,7 @@
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">85€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">195€</span>
               </div>
             </div>
           </div>
@@ -367,7 +404,7 @@
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">125€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">250€</span>
               </div>
             </div>
           </div>
@@ -392,7 +429,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance en studio de 3h00 / Maman seule, Papa et Frère ou
+                    Séance en studio de 2h00 / Maman seule, Papa et Frère ou
                     Sœur
                   </p>
                 </div>
@@ -420,7 +457,7 @@
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">210€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">325€</span>
               </div>
             </div>
           </div>
@@ -435,11 +472,15 @@
           class="bg-gradient-to-r from-[#C2A191] to-[#ad8e80] rounded-2xl p-8 md:p-12 scroll-fade-in"
         >
           <h3 class="text-2xl md:text-3xl font-serif mb-4">
-            Immortalisez cette période magique
+            Et si vous craquez pour plus d'images que prévu ?
           </h3>
           <p class="text-lg mb-8 opacity-90">
+            Aucun souci, les photos supplémentaires sont à 12€ l'unité et le
+            prix est dégressif en fonction du nombre de photos supplémentaires !
+          </p>
+          <p class="text-lg mb-8 opacity-90">
             Réservez dès maintenant votre séance grossesse pour créer des
-            souvenirs inoubliables
+            souvenirs inoubliables !
           </p>
           <router-link
             to="/formulaire"
