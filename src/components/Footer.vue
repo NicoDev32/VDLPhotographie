@@ -27,9 +27,8 @@
               Photographe Professionnelle
             </p>
             <p class="text-[#E6C7B8] leading-relaxed max-w-md">
-              Capturer vos moments les plus précieux avec passion et créativité.
-              Spécialisée dans les mariages, naissances, portraits et séances
-              famille.
+              Spécialisée dans les mariages, événements, nouveau-né, portraits,
+              familles… Capturer vos moments, raconter vos histoires.
             </p>
           </div>
 
@@ -284,7 +283,7 @@
           <!-- Copyright -->
           <div class="text-center">
             <p class="text-[#D4B5A0] text-sm">
-              © 2025 Valeria Leonardi Photography. Tous droits réservés.
+              © 2025 Valeria Daniele Leonardi Photography. Tous droits réservés.
             </p>
             <p class="text-[#C2A191]/70 text-xs mt-1">
               Fait avec ❤️ en Moselle
