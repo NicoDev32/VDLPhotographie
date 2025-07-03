@@ -124,12 +124,11 @@
               Le temps passe tellement vite, j'en ai fait l'expérience avec mes
               2 petites princesses 👸. Quel plaisir de revoir les photos de leur
               naissance, entre 7 et 14 jours, photographier vos petits amours
-              permet de garder un souvenir des premiers jours de vie de vos
-              amours.
+              permet de garder un souvenir des premiers jours de vie de bébé.
             </p>
 
             <p class="text-lg leading-relaxed mb-6 text-[#2E2B29]">
-              Une séance pour nouveau-né peut varier entre 1h30 et 5h en
+              Une séance pour nouveau-né peut varier entre 1h30 et 3h en
               fonction de ses besoins (faim, change, pleur, sommeil) c'est
               pourquoi je prends le temps pour chaque séance. N'hésitez pas à
               prendre le nécessaire de bébé (biberon ou maman 😊 pour les bébés
@@ -184,7 +183,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance en studio entre 1h30 et 4h en fonction des besoins de
+                    Séance en studio entre 1h00 et 3h en fonction des besoins de
                     votre bébé
                   </p>
                 </div>
@@ -206,13 +205,13 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    5 fichiers numériques Haute définition
+                    10 fichiers numériques Haute définition
                   </p>
                 </div>
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">85€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">145€</span>
               </div>
             </div>
           </div>
@@ -230,7 +229,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance en studio entre 1h30 et 4h en fonction des besoins de
+                    Séance en studio entre 1h00 et 3h en fonction des besoins de
                     votre bébé
                   </p>
                 </div>
@@ -252,13 +251,13 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    12 fichiers numériques Haute définition
+                    15 fichiers numériques Haute définition
                   </p>
                 </div>
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">125€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">195€</span>
               </div>
             </div>
           </div>
@@ -276,7 +275,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance en studio d'1h30
+                    Séance en studio d'1h00
                   </p>
                 </div>
 
@@ -296,7 +295,7 @@
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">210€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">125€</span>
               </div>
             </div>
           </div>
@@ -311,10 +310,11 @@
           class="bg-gradient-to-r from-[#C2A191] to-[#ad8e80] rounded-2xl p-8 md:p-12 scroll-fade-in"
         >
           <h3 class="text-2xl md:text-3xl font-serif mb-4">
-            Prêt à immortaliser ces précieux moments ?
+            Et si vous craquez pour plus d'images que prévu ?
           </h3>
           <p class="text-lg mb-8 opacity-90">
-            Contactez-nous pour planifier votre séance naissance personnalisée
+            Aucun souci, les photos supplémentaires sont à 12€ l'unité et le
+            prix est dégressif en fonction du nombre de photos supplémentaires !
           </p>
           <router-link
             to="/formulaire"
@@ -353,7 +353,7 @@ export default {
   data() {
     return {
       photos: [
-        require("../assets/naissance_1.jpg"),
+        require("../assets/NaissanceLina-8.jpg"),
         require("../assets/naissance_2.jpg"),
         require("../assets/naissance_3.jpg"),
         require("../assets/naissance_4.jpg"),
