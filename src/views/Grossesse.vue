@@ -521,7 +521,7 @@ export default {
   data() {
     return {
       photos: [
-        require("../assets/grossesse_1.jpg"),
+        require("../assets/GrossesseLauriane8.jpg"),
         require("../assets/grossesse_2.jpg"),
         require("../assets/grossesse_3.jpg"),
         require("../assets/grossesse_4.jpg"),
