@@ -36,6 +36,7 @@
                 >
                 <input
                   v-model="form.nom"
+                  @input="champsTouches = true"
                   type="text"
                   id="nom"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
@@ -56,6 +57,7 @@
                 >
                 <input
                   v-model="form.prenom"
+                  @input="champsTouches = true"
                   type="text"
                   id="prenom"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
@@ -83,6 +85,7 @@
                 >
                 <input
                   v-model="form.email"
+                  @input="champsTouches = true"
                   type="email"
                   id="email"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
@@ -106,6 +109,7 @@
                 >
                 <input
                   v-model="form.telephone"
+                  @input="champsTouches = true"
                   type="tel"
                   id="telephone"
                   class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
@@ -132,6 +136,7 @@
               >
               <select
                 v-model="form.typeProjet"
+                @input="champsTouches = true"
                 id="typeProjet"
                 class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] transition-all duration-300"
                 :class="{
@@ -165,6 +170,7 @@
               >
               <textarea
                 v-model="form.message"
+                @input="champsTouches = true"
                 id="message"
                 rows="4"
                 class="w-full px-4 py-3 border rounded-md bg-[#FFFBF8] resize-vertical transition-all duration-300"
@@ -438,6 +444,8 @@ export default {
         typeProjet: "",
         message: "",
       },
+ // Champs que l'utilisateur a déjà touchés (modifiés ou visités)
+     champsTouches: false,
       errors: {},
       sending: false,
       showModal: false,
@@ -460,20 +468,41 @@ export default {
     },
     // Computed pour les erreurs en temps réel
     errorsComputed() {
-      const errors = {};
-      if (!this.form.nom.trim()) errors.nom = true;
-      if (!this.form.prenom.trim()) errors.prenom = true;
-      if (!this.form.email.trim() || !this.validerEmail(this.form.email))
-        errors.email = true;
-      if (
-        !this.form.telephone ||
-        this.form.telephone.replace(/\D/g, "").length < 10
-      )
-        errors.telephone = true;
-      if (!this.form.typeProjet.trim()) errors.typeProjet = true;
-      if (!this.form.message.trim()) errors.message = true;
-      return errors;
-    },
+  const errors = {};
+
+  if (this.champsTouches && !this.form.nom.trim()) {
+    errors.nom = true;
+  }
+
+  if (this.champsTouches && !this.form.prenom.trim()) {
+    errors.prenom = true;
+  }
+
+  if (
+    this.champsTouches &&
+    (!this.form.email.trim() || !this.validerEmail(this.form.email))
+  ) {
+    errors.email = true;
+  }
+
+  if (
+    this.champsTouches &&
+    (!this.form.telephone || this.form.telephone.replace(/\D/g, "").length < 10)
+  ) {
+    errors.telephone = true;
+  }
+
+  if (this.champsTouches && !this.form.typeProjet.trim()) {
+    errors.typeProjet = true;
+  }
+
+  if (this.champsTouches && !this.form.message.trim()) {
+    errors.message = true;
+  }
+
+  return errors;
+}
+
   },
 
   mounted() {
