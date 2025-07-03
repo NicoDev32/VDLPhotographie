@@ -170,11 +170,11 @@
                     class="font-semibold text-[#2E2B29] mb-3 flex items-center"
                   >
                     <span class="text-[#C2A191] mr-2">🏠</span>
-                    Studio
+                    Home-Studio
                   </h4>
                   <p class="text-[#2E2B29] mb-3">
-                    Séances en studio avec matériel professionnel et décors
-                    variés.
+                    Séances en home-studio avec un décor bohème ou fond de
+                    couleur unis.
                   </p>
                 </div>
 
@@ -186,7 +186,9 @@
                     Extérieur
                   </h4>
                   <p class="text-[#2E2B29] mb-3">
-                    Séances en extérieur dans des lieux qui vous sont chers.
+                    Séances en extérieur dans des lieux qui vous sont chers axe
+                    Metz-Thionville-Luxembourg (Des magnifiques lieux il y en a
+                    !)
                   </p>
                 </div>
 
@@ -200,7 +202,7 @@
                   <p class="text-[#2E2B29] mb-3">
                     Le meilleur des deux mondes !
                     <span class="font-semibold text-[#C2A191]"
-                      >Supplément : +45€</span
+                      >Supplément : +25€</span
                     >
                   </p>
                 </div>
@@ -252,7 +254,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance Couple en extérieur d'1h30
+                    Séance Couple en extérieur de 45 min
                   </p>
                 </div>
 
@@ -265,7 +267,7 @@
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">85€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">95€</span>
               </div>
             </div>
           </div>
@@ -283,21 +285,21 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance Maman et moi en studio ou en extérieur d'1h30 (Max 2
-                    enfants)
+                    Séance Maman et moi en studio dans un décor bohème ou en
+                    extérieur d'1h00 (Max 3 enfants)
                   </p>
                 </div>
 
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📱</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    12 fichiers numériques HD
+                    10 fichiers numériques HD
                   </p>
                 </div>
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">115€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">125€</span>
               </div>
             </div>
           </div>
@@ -322,7 +324,7 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance famille en studio ou en extérieur de 2h00 (parents et
+                    Séance famille en studio ou en extérieur de 1h00 (parents et
                     2 enfants maximum)
                   </p>
                 </div>
@@ -337,13 +339,13 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📱</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    15 fichiers numériques HD
+                    10 fichiers numériques HD
                   </p>
                 </div>
               </div>
 
               <div class="border-t border-gray-200 pt-6">
-                <span class="text-4xl font-bold text-[#C2A191]">135€</span>
+                <span class="text-4xl font-bold text-[#C2A191]">125€</span>
               </div>
             </div>
           </div>
@@ -364,7 +366,7 @@
               </div>
               <h4 class="font-semibold text-[#2E2B29] mb-2">Studio</h4>
               <p class="text-[#2E2B29] text-sm">
-                Séances en studio avec décors professionnels et éclairage adapté
+                Séances en home-studio avec un décor bohème.
               </p>
             </div>
 
@@ -395,7 +397,7 @@
             Créons ensemble vos plus beaux souvenirs de famille
           </h3>
           <p class="text-lg mb-8 opacity-90">
-            Réservez dès maintenant votre séance famille personnalisée
+            Racontez-nous, dès maintenant, votre belle histoire en famille !
           </p>
           <router-link
             to="/formulaire"

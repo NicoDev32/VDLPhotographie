@@ -5,7 +5,7 @@
     <Header />
 
     <!-- Hero Section Magnifique avec animations -->
-    <section class="relative py-16 md:py-24 px-4">
+    <section class="relative py-10 md:py-16 px-4">
       <!-- Decorative elements -->
       <div class="absolute inset-0 opacity-10">
         <div
@@ -18,7 +18,7 @@
 
       <div class="relative max-w-7xl mx-auto text-center">
         <!-- Main title with elegant animation -->
-        <div class="mb-8">
+        <div class="mb-4 md:mb-6">
           <h1
             class="text-6xl md:text-8xl lg:text-9xl font-serif tracking-wider mb-6 relative hero-title"
           >
@@ -52,7 +52,7 @@
     <section class="py-16 px-4" ref="galerieSection">
       <div class="max-w-7xl mx-auto">
         <!-- Title de section -->
-        <div class="text-center mb-16 scroll-fade-in">
+        <!-- <div class="text-center mb-16 scroll-fade-in">
           <h2 class="text-4xl md:text-5xl font-serif text-[#2E2B29] mb-4">
             Moments Éternels
           </h2>
@@ -61,7 +61,7 @@
             Découvrez l'élégance et l'émotion à travers notre galerie de
             mariages d'exception
           </p>
-        </div>
+        </div> -->
 
         <!-- Grid Compact 4 colonnes avec animations -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -152,7 +152,7 @@
 
     <!-- Section Services Mariage avec animations -->
     <section
-      class="py-20 px-4 bg-white/50 backdrop-blur-sm"
+      class="py-1 px-4 bg-white/50 backdrop-blur-sm"
       ref="collectionsSection"
     >
       <div class="max-w-6xl mx-auto">
@@ -163,7 +163,7 @@
           <div class="w-24 h-0.5 bg-[#C2A191] mx-auto mb-6"></div>
           <p class="text-lg text-[#2E2B29]/70 max-w-2xl mx-auto">
             Des formules sur-mesure pour que votre jour J soit parfaitement
-            capturé
+            raconté !
           </p>
         </div>
 
@@ -214,16 +214,17 @@
                 <div class="flex items-center space-x-3">
                   <span class="text-[#C2A191]">✓</span>
                   <span class="text-sm text-[#2E2B29]"
-                    >50 fichiers numériques HD</span
+                    >L'ensemble des photos HD retouchées après tri remises sur
+                    une clé USB</span
                   >
                 </div>
               </div>
 
               <div class="text-center">
-                <div class="text-3xl font-bold text-[#C2A191] mb-2">
+                <!-- <div class="text-3xl font-bold text-[#C2A191] mb-2">
                   À partir de
-                </div>
-                <div class="text-2xl font-serif text-[#2E2B29]">580€</div>
+                </div> -->
+                <div class="text-2xl font-serif text-[#2E2B29]">695€</div>
               </div>
             </div>
           </div>
@@ -233,7 +234,7 @@
             class="group relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden border-2 border-[#C2A191] scroll-fade-in"
           >
             <div
-              class="absolute -top-4 -right-4 bg-[#C2A191] text-white px-6 py-2 rounded-full text-sm font-semibold transform rotate-12"
+              class="absolute top-0 right-0 mt-2 bg-[#C2A191] px-4 py-1 rounded-bl-xl text-xs font-semibold tracking-wider"
             >
               POPULAIRE
             </div>
@@ -268,23 +269,24 @@
                   <span class="text-[#C2A191]">✓</span>
                   <span class="text-sm text-[#2E2B29]">Photos de groupe</span>
                 </div>
-                <div class="flex items-center space-x-3">
+                <!-- <div class="flex items-center space-x-3">
                   <span class="text-[#C2A191]">✓</span>
                   <span class="text-sm text-[#2E2B29]">Reportage cocktail</span>
-                </div>
+                </div> -->
                 <div class="flex items-center space-x-3">
                   <span class="text-[#C2A191]">✓</span>
                   <span class="text-sm text-[#2E2B29]"
-                    >80 fichiers numériques HD</span
+                    >L'ensemble des photos HD retouchées après tri remises sur
+                    une clé USB</span
                   >
                 </div>
               </div>
 
               <div class="text-center">
-                <div class="text-3xl font-bold text-[#C2A191] mb-2">
+                <!-- <div class="text-3xl font-bold text-[#C2A191] mb-2">
                   À partir de
-                </div>
-                <div class="text-2xl font-serif text-[#2E2B29]">850€</div>
+                </div> -->
+                <div class="text-2xl font-serif text-[#2E2B29]">895€</div>
               </div>
             </div>
           </div>
@@ -329,22 +331,24 @@
                 <div class="flex items-center space-x-3">
                   <span class="text-[#C2A191]">✓</span>
                   <span class="text-sm text-[#2E2B29]"
-                    >Moments spontanés de fête</span
+                    >L'ensemble des photos HD retouchées après tri remises sur
+                    une clé USB</span
                   >
                 </div>
                 <div class="flex items-center space-x-3">
                   <span class="text-[#C2A191]">✓</span>
                   <span class="text-sm text-[#2E2B29]"
-                    >L'ensemble des fichiers numériques HD</span
+                    >Sélection de 30 photos pour votre album, à partir des
+                    images reçues</span
                   >
                 </div>
               </div>
 
               <div class="text-center">
-                <div class="text-3xl font-bold text-[#C2A191] mb-2">
+                <!-- <div class="text-3xl font-bold text-[#C2A191] mb-2">
                   À partir de
-                </div>
-                <div class="text-2xl font-serif text-[#2E2B29]">1200€</div>
+                </div> -->
+                <div class="text-2xl font-serif text-[#2E2B29]">1295€</div>
               </div>
             </div>
           </div>
@@ -358,7 +362,14 @@
         class="absolute inset-0 bg-gradient-to-r from-[#C2A191] via-[#E6C7B8] to-[#C2A191]"
       ></div>
       <div class="absolute inset-0 bg-black/20"></div>
-
+      <p
+        class="text-sm md:text-base text-white/80 italic mb-16 max-w-2xl mx-auto leading-snug scroll-fade-in"
+      >
+        Les frais de déplacement sont inclus dans les forfaits, sauf pour les
+        mariages situés à plus de 40 km du Home-Studio (Clouange). Au-delà de
+        cette distance, des frais supplémentaires pourront vous être
+        communiqués.
+      </p>
       <div class="relative z-10 max-w-4xl mx-auto text-center scroll-fade-in">
         <h2 class="text-4xl md:text-6xl font-serif mb-6">
           Votre Jour J Mérite l'Excellence
@@ -370,9 +381,9 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <router-link
             to="/formulaire"
-            class="inline-flex items-center px-8 py-4 bg-white text-[#C2A191] hover:bg-gray-100 font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl"
+            class="inline-flex w-auto mx-auto items-center px-8 py-4 bg-white text-[#C2A191] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
           >
-            Réserver votre séance
+            Contactez-moi
             <svg
               class="ml-3 w-5 h-5"
               fill="none"
@@ -388,7 +399,7 @@
             </svg>
           </router-link>
 
-          <a
+          <!-- <a
             href="tel:+33619037490"
             class="inline-flex items-center px-8 py-4 border-2 border-white hover:bg-white hover:text-[#C2A191] font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
           >
@@ -406,13 +417,13 @@
               ></path>
             </svg>
             <span>Appelez-moi</span>
-          </a>
+          </a> -->
         </div>
 
-        <p class="text-sm mt-8 opacity-75">
+        <!-- <p class="text-sm mt-8 opacity-75">
           📞 Réponse sous 24h • 💝 Devis personnalisé gratuit • 📍 Moselle &
           alentours
-        </p>
+        </p> -->
       </div>
     </section>
 
