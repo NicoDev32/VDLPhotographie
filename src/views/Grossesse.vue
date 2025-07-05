@@ -336,7 +336,7 @@
         <h2
           class="text-3xl md:text-4xl font-serif text-center mb-12 text-[#2E2B29] scroll-fade-in"
         >
-          Nos Collections Grossesse
+          Collections Grossesse
         </h2>
 
         <div class="grid lg:grid-cols-3 gap-8">

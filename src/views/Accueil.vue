@@ -84,7 +84,7 @@
               class="group relative overflow-hidden rounded-2xl aspect-square bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 scroll-fade-in"
             >
               <img
-                src="@/assets/portrait.jpg"
+                src="@/assets/portrait_5.jpg"
                 alt="Portrait"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -106,8 +106,8 @@
               class="group relative overflow-hidden rounded-2xl aspect-square bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 scroll-fade-in"
             >
               <img
-                src="@/assets/couple.jpg"
-                alt="Couple"
+                src="@/assets/famille_1.jpg"
+                alt="Famille"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -128,8 +128,8 @@
               class="group relative overflow-hidden rounded-2xl aspect-square bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 scroll-fade-in"
             >
               <img
-                src="@/assets/bouquet.jpg"
-                alt="Bouquet"
+                src="@/assets/grossesse_2.jpg"
+                alt="Grossesse"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -150,8 +150,8 @@
               class="group relative overflow-hidden rounded-2xl aspect-square bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 scroll-fade-in"
             >
               <img
-                src="@/assets/maman-bebe.jpg"
-                alt="Maman et bébé"
+                src="@/assets/mariage2.jpg"
+                alt="Mariage"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div

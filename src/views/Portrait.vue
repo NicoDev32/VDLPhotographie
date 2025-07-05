@@ -202,7 +202,7 @@
         <h2
           class="text-3xl md:text-4xl font-serif text-center mb-12 text-[#2E2B29] scroll-fade-in"
         >
-          Nos Collections Portrait
+          Collections Portrait
         </h2>
 
         <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
