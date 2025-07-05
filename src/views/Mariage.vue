@@ -132,7 +132,7 @@
             class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 scroll-fade-in"
           >
             <img
-              src="@/assets/mariage4.jpg"
+              src="@/assets/mariage5.jpg"
               alt="Couple de dos sur la plage"
               class="w-full h-48 md:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
             />
