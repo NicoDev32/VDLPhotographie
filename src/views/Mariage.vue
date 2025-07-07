@@ -224,7 +224,9 @@
                 <!-- <div class="text-3xl font-bold text-[#C2A191] mb-2">
                   À partir de
                 </div> -->
-                <div class="text-2xl font-serif text-[#2E2B29]">695€</div>
+                <div class="text-2xl font-serif text-[#2E2B29]">
+                  À partir de 795€
+                </div>
               </div>
             </div>
           </div>
@@ -286,7 +288,9 @@
                 <!-- <div class="text-3xl font-bold text-[#C2A191] mb-2">
                   À partir de
                 </div> -->
-                <div class="text-2xl font-serif text-[#2E2B29]">895€</div>
+                <div class="text-2xl font-serif text-[#2E2B29]">
+                  À partir de 1195€
+                </div>
               </div>
             </div>
           </div>
@@ -348,7 +352,9 @@
                 <!-- <div class="text-3xl font-bold text-[#C2A191] mb-2">
                   À partir de
                 </div> -->
-                <div class="text-2xl font-serif text-[#2E2B29]">1295€</div>
+                <div class="text-2xl font-serif text-[#2E2B29]">
+                  À partir de 1395€
+                </div>
               </div>
             </div>
           </div>
