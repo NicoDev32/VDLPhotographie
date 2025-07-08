@@ -527,9 +527,9 @@ export default {
         require("../assets/grossesse_4.jpg"),
         require("../assets/grossesse_5.jpg"),
         require("../assets/grossesse_6.jpg"),
-        require("../assets/grossesse_7.jpg"),
-        require("../assets/grossesse_8.jpg"),
-        require("../assets/grossesse_9.jpg"),
+      //  require("../assets/grossesse_7.jpg"),
+      //  require("../assets/grossesse_8.jpg"),
+      //  require("../assets/grossesse_9.jpg"),
       ],
       activePhoto: 0,
     };

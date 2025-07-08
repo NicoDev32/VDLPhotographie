@@ -442,9 +442,9 @@ export default {
         require("../assets/famille_4.jpg"),
         require("../assets/famille_5.jpg"),
         require("../assets/famille_6.jpg"),
-        require("../assets/famille_7.jpg"),
-        require("../assets/famille_8.jpg"),
-        require("../assets/famille_9.jpg"),
+      //  require("../assets/famille_7.jpg"),
+      //  require("../assets/famille_8.jpg"),
+      //  require("../assets/famille_9.jpg"),
       ],
       activePhoto: 0,
     };

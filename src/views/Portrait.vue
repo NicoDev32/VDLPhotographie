@@ -393,9 +393,9 @@ export default {
         require("../assets/portrait_4.jpg"),
         require("../assets/portrait_5.jpg"),
         require("../assets/portrait_6.jpg"),
-        require("../assets/portrait_7.jpg"),
-        require("../assets/portrait_8.jpg"),
-        require("../assets/portrait_9.jpg"),
+       // require("../assets/portrait_7.jpg"),
+       // require("../assets/portrait_8.jpg"),
+       // require("../assets/portrait_9.jpg"),
       ],
       activePhoto: 0,
     };

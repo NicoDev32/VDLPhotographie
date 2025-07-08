@@ -112,7 +112,7 @@
             class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 scroll-fade-in"
           >
             <img
-              src="@/assets/mariage3.jpg"
+              src="@/assets/mariage6.jpg"
               alt="Photographe femme"
               class="w-full h-48 md:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
             />

@@ -353,15 +353,15 @@ export default {
   data() {
     return {
       photos: [
+        require("../assets/naissance_4.jpg"),
         require("../assets/NaissanceLina-8.jpg"),
         require("../assets/naissance_2.jpg"),
         require("../assets/naissance_3.jpg"),
-        require("../assets/naissance_4.jpg"),
         require("../assets/naissance_5.jpg"),
         require("../assets/naissance_6.jpg"),
-        require("../assets/naissance_7.jpg"),
-        require("../assets/naissance_8.jpg"),
-        require("../assets/naissance_9.jpg"),
+      //  require("../assets/naissance_7.jpg"),
+      //  require("../assets/naissance_8.jpg"),
+      //  require("../assets/naissance_9.jpg"),
       ],
       activePhoto: 0,
     };
