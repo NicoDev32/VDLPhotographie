@@ -119,14 +119,18 @@
 
         <!-- Services Section -->
         <div>
-          <h4 class="text-xl font-serif mb-6 text-[#C2A191]">Nos Services</h4>
+          <h4 class="text-xl font-serif mb-6 text-[#C2A191]">Prestations</h4>
           <ul class="space-y-3">
             <li>
               <router-link
                 to="/mariage"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2"
               >
-                <span>💒</span>
+                <img
+                  src="@/assets/picto_mariage.png"
+                  alt="Mariage"
+                  class="w-6 h-6 object-contain"
+                />
                 <span>Mariage</span>
               </router-link>
             </li>
@@ -135,7 +139,11 @@
                 to="/grossesse"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2"
               >
-                <span>🤰</span>
+                <img
+                  src="@/assets/picto_grossesse.png"
+                  alt="Mariage"
+                  class="w-6 h-6 object-contain"
+                />
                 <span>Grossesse</span>
               </router-link>
             </li>
@@ -144,7 +152,11 @@
                 to="/naissance"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2"
               >
-                <span>👶</span>
+                <img
+                  src="@/assets/picto_naissance.png"
+                  alt="Mariage"
+                  class="w-6 h-6 object-contain"
+                />
                 <span>Naissance</span>
               </router-link>
             </li>
@@ -153,7 +165,11 @@
                 to="/famille"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2"
               >
-                <span>👨‍👩‍👧‍👦</span>
+                <img
+                  src="@/assets/picto_famille.png"
+                  alt="Mariage"
+                  class="w-6 h-6 object-contain"
+                />
                 <span>Famille</span>
               </router-link>
             </li>
@@ -162,7 +178,11 @@
                 to="/portrait"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2"
               >
-                <span>📸</span>
+                <img
+                  src="@/assets/picto_portrait.png"
+                  alt="Mariage"
+                  class="w-6 h-6 object-contain"
+                />
                 <span>Portrait</span>
               </router-link>
             </li>
@@ -176,25 +196,40 @@
             <li>
               <router-link
                 to="/"
-                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300"
+                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2"
               >
-                Accueil
+                <img
+                  src="@/assets/picto_accueil.png"
+                  alt="Contact"
+                  class="w-6 h-6 object-contain"
+                />
+                <span>Accueil</span>
               </router-link>
             </li>
             <li>
               <router-link
                 to="/formulaire"
-                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 font-medium"
+                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2 font-medium"
               >
-                📝 Contact
+                <img
+                  src="@/assets/picto_contact.png"
+                  alt="Contact"
+                  class="w-6 h-6 object-contain"
+                />
+                <span>Contact</span>
               </router-link>
             </li>
             <li>
               <router-link
                 to="/apropos"
-                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 font-medium"
+                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2 font-medium"
               >
-                👩‍💼📷 À propos
+                <img
+                  src="@/assets/picto_a_propos.png"
+                  alt="A propos"
+                  class="w-6 h-6 object-contain"
+                />
+                <span>À Propos</span>
               </router-link>
             </li>
             <li v-show="false">
