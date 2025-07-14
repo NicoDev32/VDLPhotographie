@@ -19,9 +19,17 @@
         <p
           class="text-lg md:text-xl text-center leading-relaxed text-[#2E2B29]/80 hero-description"
         >
-          Le portrait, cette photo que vous voulez mettre sur votre profil insta
-          ou facebook, dans votre chambre ou dans le salon parce que vous avez
-          le plus beau de tous les enfants, un vrai petit mannequin.
+          Le portrait, c'est cette image qu'on a envie d'afficher fièrement. Que
+          ce soit pour capturer l'innocence d'un enfant, la complicité d'un
+          regard, ou révéler la force et la beauté d'une personne, tout
+          simplement. <br />
+          J'ai une tendresse particulière pour les portraits féminins, pensés
+          comme une parenthèse hors du temps. Une façon de se reconnecter à soi,
+          de raviver une confiance oubliée ou simplement de se sentir libre,
+          belle, et pleinement soi-même. <br />
+          Et si j'accorde une place toute spéciale à la femme, j'affectionne
+          tout autant photographier les enfants, avec leur spontanéité
+          désarmante, et les hommes, dans toute leur authenticité.
         </p>
       </div>
     </section>
@@ -205,9 +213,11 @@
           Collections Portrait
         </h2>
 
-        <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div
+          class="grid gap-8 max-w-4xl mx-auto justify-center lg:flex lg:justify-center"
+        >
           <!-- Collection RAGGAZZA / RAGAZZO -->
-          <div
+          <!-- <div
             class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 scroll-fade-in"
           >
             <div class="text-center">
@@ -242,7 +252,7 @@
                 <span class="text-4xl font-bold text-[#C2A191]">75€</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Collection DIPINTO -->
           <div
@@ -264,14 +274,14 @@
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">📷</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Séance en studio ou en extérieur d'1h30
+                    Séance en studio ou en extérieur de 45 minutes
                   </p>
                 </div>
 
                 <div class="flex items-start space-x-3">
                   <span class="text-[#C2A191] text-xl">✨</span>
                   <p class="text-sm text-[#2E2B29] leading-relaxed">
-                    Supplément de 45€ si studio + extérieur (1h supplémentaire)
+                    Supplément de 25€ si studio + extérieur (1h supplémentaire)
                   </p>
                 </div>
 
@@ -322,7 +332,7 @@
             </div>
           </div>
 
-          <div class="mt-8 p-6 bg-[#C2A191]/10 rounded-lg scroll-fade-in">
+          <!-- <div class="mt-8 p-6 bg-[#C2A191]/10 rounded-lg scroll-fade-in">
             <h4 class="font-semibold text-[#2E2B29] mb-2 text-center">
               💡 Option Combinée
             </h4>
@@ -332,7 +342,7 @@
               <span class="font-semibold text-[#C2A191]">+45€</span>
               supplémentaires !
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -344,11 +354,11 @@
           class="bg-gradient-to-r from-[#C2A191] to-[#ad8e80] rounded-2xl p-8 md:p-12 scroll-fade-in"
         >
           <h3 class="text-2xl md:text-3xl font-serif mb-4">
-            Prêt pour votre séance portrait ?
+            Et si vous craquez pour plus d'images que prévu ?
           </h3>
           <p class="text-lg mb-8 opacity-90">
-            Discutons de vos idées et créons ensemble le portrait qui vous
-            ressemble
+            Aucun souci, les photos supplémentaires sont à 12€ l'unité et le
+            prix est dégressif en fonction du nombre de photos supplémentaires !
           </p>
           <router-link
             to="/formulaire"
