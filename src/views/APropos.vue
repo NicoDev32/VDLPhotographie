@@ -99,7 +99,7 @@
           class="relative group overflow-hidden rounded-2xl shadow-xl aspect-[4/3] scroll-fade-in"
         >
           <img
-            src="@/assets/portrait.jpg"
+            src="@/assets/portrait_moi.jpg"
             alt="Photographe Valeria"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
