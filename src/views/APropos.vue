@@ -131,7 +131,7 @@
         <p
           class="text-lg md:text-xl text-[#2E2B29]/80 leading-relaxed scroll-fade-in"
         >
-          Travaillons ensemble non à la place : On capture la magie ensemble ?
+          On capture la magie ensemble ?
         </p>
       </div>
     </section>
