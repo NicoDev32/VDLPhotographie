@@ -69,7 +69,7 @@
           famille…<br />
           Puis on me fait confiance pour des mariages (le stress, mais surtout
           l'émotion pure).<br />
-          Je découvre aussi le bonheur des mini-sessions à thème — et je te le
+          Je découvre aussi le bonheur des mini-sessions à thème - et je te le
           dis : j'adooooore Noël ! 🎄✨
         </p>
         <p>
