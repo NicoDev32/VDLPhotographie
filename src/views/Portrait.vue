@@ -46,7 +46,7 @@
           >
             <img
               :src="photos[activePhoto]"
-              alt="Photo principale"
+              alt="Séance photo portrait par VDL Photographe à Clouange, Moselle"
               class="object-contain h-full max-w-full rounded-xl shadow-md border-2 border-white"
             />
 
