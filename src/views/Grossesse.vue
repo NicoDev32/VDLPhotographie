@@ -38,7 +38,7 @@
           >
             <img
               :src="photos[activePhoto]"
-              alt="Photo principale"
+              alt="Séance photo grossesse par VDL Photographe à Clouange, Moselle"
               class="object-contain h-full max-w-full rounded-xl shadow-md border-2 border-white"
             />
 
@@ -229,7 +229,7 @@
                     voilages et accessoires spécialement pensés pour sublimer
                     les courbes et les émotions. Pas besoin de prévoir une
                     garde-robe complète, on compose ensemble ! Ce sont
-                    simplement des petits conseils pour vous guider — si vous
+                    simplement des petits conseils pour vous guider - si vous
                     n'avez pas tout, pas de panique, on s'adapte et tout se
                     passera à merveille, promis !
                   </p>

@@ -69,7 +69,7 @@
           famille…<br />
           Puis on me fait confiance pour des mariages (le stress, mais surtout
           l'émotion pure).<br />
-          Je découvre aussi le bonheur des mini-sessions à thème — et je te le
+          Je découvre aussi le bonheur des mini-sessions à thème - et je te le
           dis : j'adooooore Noël ! 🎄✨
         </p>
         <p>
@@ -100,7 +100,7 @@
         >
           <img
             src="@/assets/portrait_moi.jpg"
-            alt="Photographe Valeria"
+            alt="Valeria Daniele Leonardi, photographe professionnelle à Clouange, Moselle (57150)"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div
