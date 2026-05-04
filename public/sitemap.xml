@@ -1,81 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <!-- Page d'accueil -->
   <url>
-    <loc>https://vdlphotographe.fr</loc>
-    <lastmod>2025-06-24</lastmod>
+    <loc>https://vdlphotographe.fr/</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <!-- Liens vers les autres domaines -->
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/"/>
   </url>
-  
-  <!-- Services -->
+
+  <!-- Mariage -->
   <url>
     <loc>https://vdlphotographe.fr/mariage</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/mariage"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/mariage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/mariage"/>
   </url>
-  
+
+  <!-- Grossesse -->
   <url>
     <loc>https://vdlphotographe.fr/grossesse</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/grossesse"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/grossesse"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/grossesse"/>
   </url>
-  
+
+  <!-- Famille -->
   <url>
     <loc>https://vdlphotographe.fr/famille</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/famille"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/famille"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/famille"/>
   </url>
-  
+
+  <!-- Portrait -->
   <url>
     <loc>https://vdlphotographe.fr/portrait</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/portrait"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/portrait"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/portrait"/>
   </url>
-  
+
+  <!-- Naissance -->
   <url>
     <loc>https://vdlphotographe.fr/naissance</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/naissance"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/naissance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/naissance"/>
   </url>
-  
+
   <!-- Contact -->
   <url>
     <loc>https://vdlphotographe.fr/formulaire</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/formulaire"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/formulaire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/formulaire"/>
   </url>
 
-  <!-- A propos -->
-    <url>
+  <!-- À Propos -->
+  <url>
     <loc>https://vdlphotographe.fr/apropos</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr/apropos"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vdlphotographe.com/apropos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr/apropos"/>
   </url>
-  
+
 </urlset>

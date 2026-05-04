@@ -3,50 +3,139 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Photographe à Clouange (57), près de Metz, spécialisée en photo de famille, photo grossesse, photo nouveau-né, photo de mariage et portrait."
-    />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO Principal -->
+    <title>VDL Photographe - Photographe à Clouange, Metz, Thionville, Moselle</title>
+    <meta name="description" content="Valeria Daniele Leonardi, photographe professionnelle à Clouange (57150), Moselle. Mariage, grossesse, famille, portrait et naissance à Metz, Thionville, Hayange et Luxembourg." />
+    <meta name="keywords" content="photographe Clouange, photographe Moselle, photographe Metz, photographe Thionville, photographe Hayange, mariage, grossesse, famille, naissance, portrait, Valeria Daniele Leonardi, VDL Photographe, photographe 57, Luxembourg" />
+    <meta name="author" content="VDL Photographe - Valeria Daniele Leonardi" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#C2A191" />
+
+    <!-- Géolocalisation -->
+    <meta name="geo.region" content="FR-57" />
+    <meta name="geo.placename" content="Clouange, Moselle, France" />
+    <meta name="geo.position" content="49.2657;6.0597" />
+    <meta name="ICBM" content="49.2657, 6.0597" />
+
+    <!-- Open Graph (fallback statique avant chargement JS) -->
+    <meta property="og:site_name" content="VDL Photographe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="VDL Photographe - Photographe à Clouange, Moselle" />
+    <meta property="og:description" content="Valeria Daniele Leonardi, photographe professionnelle à Clouange (57150). Mariage, grossesse, famille, portrait et naissance en Moselle et au Luxembourg." />
+    <meta property="og:url" content="https://vdlphotographe.fr" />
+    <meta property="og:image" content="https://vdlphotographe.fr/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VDL Photographe - Valeria Daniele Leonardi, photographe à Clouange, Moselle" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- Twitter Card (fallback statique) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VDL Photographe - Photographe à Clouange, Moselle" />
+    <meta name="twitter:description" content="Valeria Daniele Leonardi, photographe professionnelle à Clouange (57150). Mariage, grossesse, famille, portrait et naissance en Moselle et au Luxembourg." />
+    <meta name="twitter:image" content="https://vdlphotographe.fr/og-image.jpg" />
+    <meta name="twitter:image:alt" content="VDL Photographe - Valeria Daniele Leonardi, photographe à Clouange, Moselle" />
+
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://vdlphotographe.fr" />
+    <link rel="alternate" hreflang="fr-FR" href="https://vdlphotographe.fr" />
+    <link rel="alternate" hreflang="x-default" href="https://vdlphotographe.fr" />
+
+    <!-- Favicon & icônes -->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="apple-touch-icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="manifest" href="<%= BASE_URL %>manifest.json" />
+
+    <!-- Polices Google Fonts (preconnect optimisé, sans doublon) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap"
-      rel="stylesheet"
-    />
-    <title>
-      VDL Photographe: Photographe Mariage Grossesse Naissance Famille Portrait
-    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=GFS+Didot&family=Great+Vibes&family=Libre+Bodoni&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+
+    <!-- JSON-LD Schema.org (fallback statique pour indexation initiale) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://vdlphotographe.fr/#localbusiness",
+      "name": "VDL Photographe",
+      "legalName": "Valeria Daniele Leonardi",
+      "description": "Photographe professionnelle spécialisée en mariage, grossesse, famille, portrait et naissance à Clouange, Moselle. Intervient à Metz, Thionville, Hayange, Amnéville et au Luxembourg.",
+      "url": "https://vdlphotographe.fr",
+      "telephone": "+33619037490",
+      "email": "Vdlphotographe@outlook.com",
+      "image": "https://vdlphotographe.fr/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Clouange",
+        "postalCode": "57150",
+        "addressRegion": "Moselle",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "49.2657",
+        "longitude": "6.0597"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Clouange"},
+        {"@type": "City", "name": "Metz"},
+        {"@type": "City", "name": "Thionville"},
+        {"@type": "City", "name": "Hayange"},
+        {"@type": "City", "name": "Amnéville"},
+        {"@type": "City", "name": "Florange"},
+        {"@type": "City", "name": "Knutange"},
+        {"@type": "City", "name": "Algrange"},
+        {"@type": "City", "name": "Serémange-Erzange"},
+        {"@type": "City", "name": "Fameck"},
+        {"@type": "City", "name": "Hagondange"},
+        {"@type": "Country", "name": "Luxembourg"}
+      ],
+      "priceRange": "€€",
+      "founder": {
+        "@type": "Person",
+        "name": "Valeria Daniele Leonardi",
+        "jobTitle": "Photographe Professionnelle"
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services Photographie",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Photographie de Mariage", "description": "Couverture complète de votre mariage en Moselle et Luxembourg"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Photographie de Grossesse", "description": "Séances maternité artistiques à Clouange et Moselle"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Photographie de Famille", "description": "Portraits familiaux naturels en Moselle"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Photographie de Portrait", "description": "Portraits professionnels et artistiques à Clouange"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Photographie de Naissance", "description": "Séances nouveau-né sécurisées en Moselle"}}
+        ]
+      },
+      "sameAs": [
+        "https://vdlphotographe.fr",
+        "https://vdlphotographe.com",
+        "https://www.facebook.com/p/VDLphotographe-100063617104628/",
+        "https://www.instagram.com/vdlphotographe/"
+      ]
+    }
+    </script>
   </head>
   <body>
     <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
+      <p><strong>VDL Photographe - Valeria Daniele Leonardi</strong><br />
+      Photographe professionnelle à Clouange (57150), Moselle.<br />
+      Spécialisée en mariage, grossesse, famille, portrait et naissance.<br />
+      Intervient à Metz, Thionville, Hayange, Amnéville et au Luxembourg.<br />
+      Contact : <a href="tel:0619037490">06 19 03 74 90</a> - <a href="mailto:Vdlphotographe@outlook.com">Vdlphotographe@outlook.com</a><br />
+      Pour une expérience optimale, veuillez activer JavaScript dans votre navigateur.</p>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->

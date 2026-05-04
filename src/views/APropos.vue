@@ -100,7 +100,7 @@
         >
           <img
             src="@/assets/portrait_moi.jpg"
-            alt="Photographe Valeria"
+            alt="Valeria Daniele Leonardi, photographe professionnelle à Clouange, Moselle (57150)"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
           <div

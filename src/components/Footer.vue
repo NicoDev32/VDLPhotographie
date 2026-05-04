@@ -141,7 +141,7 @@
               >
                 <img
                   src="@/assets/picto_grossesse.png"
-                  alt="Mariage"
+                  alt="Grossesse"
                   class="w-6 h-6 object-contain"
                 />
                 <span>Grossesse</span>
@@ -154,7 +154,7 @@
               >
                 <img
                   src="@/assets/picto_naissance.png"
-                  alt="Mariage"
+                  alt="Naissance"
                   class="w-6 h-6 object-contain"
                 />
                 <span>Naissance</span>
@@ -167,7 +167,7 @@
               >
                 <img
                   src="@/assets/picto_famille.png"
-                  alt="Mariage"
+                  alt="Famille"
                   class="w-6 h-6 object-contain"
                 />
                 <span>Famille</span>
@@ -180,7 +180,7 @@
               >
                 <img
                   src="@/assets/picto_portrait.png"
-                  alt="Mariage"
+                  alt="Portrait"
                   class="w-6 h-6 object-contain"
                 />
                 <span>Portrait</span>

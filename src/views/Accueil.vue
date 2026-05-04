@@ -32,7 +32,7 @@
             ></div>
             <img
               src="@/assets/logo_vdl.jpg"
-              alt="VLD Logo"
+              alt="VDL Photographe - Logo Valeria Daniele Leonardi, photographe à Clouange, Moselle"
               class="h-32 md:h-32 w-auto object-contain filter drop-shadow-lg hover:scale-110 transition-transform duration-300"
             />
             <div
@@ -85,7 +85,7 @@
             >
               <img
                 src="@/assets/portrait_5.jpg"
-                alt="Portrait"
+                alt="Séance portrait par VDL Photographe à Clouange, Moselle"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -107,7 +107,7 @@
             >
               <img
                 src="@/assets/famille_1.jpg"
-                alt="Famille"
+                alt="Photo de couple par VDL Photographe, photographe en Moselle et alentours"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -129,7 +129,7 @@
             >
               <img
                 src="@/assets/grossesse_2.jpg"
-                alt="Grossesse"
+                alt="Séance photo grossesse par VDL Photographe, photographe à Clouange, Moselle"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -151,7 +151,7 @@
             >
               <img
                 src="@/assets/mariage2.jpg"
-                alt="Mariage"
+                alt="Photo de mariage par VDL Photographe en Moselle et au Luxembourg"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
