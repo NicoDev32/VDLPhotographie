@@ -52,6 +52,19 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "apropos" */ "../views/APropos.vue"),
   },
+  // Pages SEO géolocalisées - index puis dynamique (ordre important)
+  {
+    path: "/photographe-moselle",
+    name: "PhotographeMoselle",
+    component: () =>
+      import(/* webpackChunkName: "photographe-moselle" */ "../views/PhotographeMoselle.vue"),
+  },
+  {
+    path: "/photographe-:citySlug",
+    name: "PhotographeVille",
+    component: () =>
+      import(/* webpackChunkName: "photographe-ville" */ "../views/PhotographeVille.vue"),
+  },
   // Route 404 - à mettre en dernier
   {
     path: "*",
