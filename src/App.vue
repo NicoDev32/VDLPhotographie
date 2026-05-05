@@ -5,12 +5,18 @@
       <router-link to="/about">About</router-link> -->
     </div>
     <router-view />
+    <CookieBanner />
+    <WhatsAppButton />
   </div>
 </template>
 
 <script>
+import CookieBanner from "@/components/CookieBanner.vue";
+import WhatsAppButton from "@/components/WhatsAppButton.vue";
+
 export default {
   name: "App",
+  components: { CookieBanner, WhatsAppButton },
   computed: {
     currentDomain() {
       if (typeof window !== "undefined") {
