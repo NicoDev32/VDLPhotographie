@@ -4,6 +4,14 @@
 
     <!-- Hero Section compact -->
     <section class="relative overflow-hidden py-4 md:py-8 px-4">
+      <!-- Image de fond -->
+      <img
+        src="@/assets/famille_5.jpg"
+        alt=""
+        aria-hidden="true"
+        class="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none"
+      />
+
       <!-- Background decoratif -->
       <div class="absolute inset-0 opacity-5">
         <div
