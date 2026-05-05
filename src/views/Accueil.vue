@@ -2,14 +2,14 @@
   <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
     <Header />
 
-    <!-- Hero Section compact -->
-    <section class="relative overflow-hidden py-4 md:py-8 px-4">
+    <!-- Hero + Slogan -->
+    <section class="relative overflow-hidden min-h-[70vh] flex flex-col justify-center px-4 py-12 md:py-20">
       <!-- Image de fond -->
       <img
         src="@/assets/famille_5.jpg"
         alt=""
         aria-hidden="true"
-        class="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none"
+        class="absolute inset-0 w-full h-full object-cover object-center opacity-25 pointer-events-none select-none"
       />
 
       <!-- Background decoratif -->
@@ -22,7 +22,8 @@
         ></div>
       </div>
 
-      <div class="relative max-w-6xl mx-auto text-center">
+      <!-- Titre -->
+      <div class="relative max-w-6xl mx-auto text-center w-full">
         <div>
           <h1
             class="text-3xl md:text-5xl lg:text-6xl font-serif tracking-wide leading-tight mb-4 hero-title"
@@ -31,7 +32,7 @@
             <span class="block text-[#2E2B29] mt-1"> LEONARDI </span>
           </h1>
 
-          <!-- Logo intégré élégamment -->
+          <!-- Logo -->
           <div
             class="flex items-center justify-center space-x-4 mb-4 hero-logo"
           >
@@ -55,21 +56,15 @@
           </p>
         </div>
       </div>
-    </section>
 
-    <!-- Slogan compact -->
-    <section class="py-4 md:py-6 px-4 relative">
-      <div class="max-w-4xl mx-auto text-center">
-        <div>
-          <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-serif leading-relaxed hero-slogan"
-          >
-            <span class="block text-[#2E2B29]">Capturer des Moments,</span>
-            <span class="block text-[#C2A191] mt-1"
-              >Raconter des Histoires</span
-            >
-          </h2>
-        </div>
+      <!-- Slogan -->
+      <div class="relative max-w-4xl mx-auto text-center w-full mt-10 md:mt-14">
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl font-serif leading-relaxed hero-slogan"
+        >
+          <span class="block text-[#2E2B29]">Capturer des Moments,</span>
+          <span class="block text-[#C2A191] mt-1">Raconter des Histoires</span>
+        </h2>
       </div>
     </section>
 
