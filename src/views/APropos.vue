@@ -1,10 +1,10 @@
 <template>
-  <div class="apropos bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
+  <div class="apropos bg-[#FFFBF8] text-[#2E2B29] min-h-screen overflow-x-hidden">
     <Header />
 
     <!-- En-tête avec nom -->
-    <section class="relative overflow-hidden py-6 md:py-12 px-4">
-      <!-- Déco fond -->
+    <section class="relative overflow-hidden py-6 md:py-12 px-4 min-h-[40vh] flex flex-col justify-center">
+<!-- Déco fond -->
       <div class="absolute inset-0 opacity-5">
         <div
           class="absolute top-24 left-10 w-64 h-64 bg-[#C2A191] rounded-full blur-3xl"
@@ -25,6 +25,13 @@
         >
           Hello toi qui lis cette page !
         </p>
+      </div>
+    </section>
+
+    <!-- Section caméra animée -->
+    <section class="camera-section w-full flex items-center justify-center overflow-hidden">
+      <div class="camera-zoom-wrapper">
+        <CameraAnimated />
       </div>
     </section>
 
@@ -168,10 +175,10 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-
+import CameraAnimated from "@/components/CameraAnimated.vue";
 export default {
   name: "APropos",
-  components: { Header, Footer },
+  components: { Header, Footer, CameraAnimated },
   mounted() {
     this.initAnimations();
     this.setupScrollObserver();
@@ -224,4 +231,14 @@ export default {
   opacity: 1;
   transform: translateY(0);
 }
+
+.camera-section { height: 160px; }
+@media (min-width: 640px)  { .camera-section { height: 230px; } }
+@media (min-width: 768px)  { .camera-section { height: 300px; } }
+@media (min-width: 1024px) { .camera-section { height: 360px; } }
+
+.camera-zoom-wrapper { zoom: 0.42; }
+@media (min-width: 640px)  { .camera-zoom-wrapper { zoom: 0.66; } }
+@media (min-width: 768px)  { .camera-zoom-wrapper { zoom: 0.88; } }
+@media (min-width: 1024px) { .camera-zoom-wrapper { zoom: 1; } }
 </style>

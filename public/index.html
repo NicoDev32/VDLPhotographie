@@ -49,13 +49,13 @@
     <link rel="apple-touch-icon" href="<%= BASE_URL %>favicon.ico" />
     <link rel="manifest" href="<%= BASE_URL %>manifest.json" />
 
-    <!-- Polices Google Fonts (preconnect optimisé, sans doublon) -->
+    <!-- Polices Google Fonts (async, non-bloquant) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=GFS+Didot&family=Great+Vibes&family=Libre+Bodoni&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=GFS+Didot&family=Great+Vibes&family=Libre+Bodoni&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=GFS+Didot&family=Great+Vibes&family=Libre+Bodoni&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=GFS+Didot&family=Great+Vibes&family=Libre+Bodoni&display=swap" rel="stylesheet" /></noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
 
     <!-- JSON-LD Schema.org (fallback statique pour indexation initiale) -->
     <script type="application/ld+json">
