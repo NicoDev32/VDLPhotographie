@@ -266,6 +266,8 @@
             <a
               href="https://www.facebook.com/p/VDLphotographe-100063617104628/"
               target="_blank"
+              aria-label="VDL Photographe sur Facebook"
+              rel="noopener noreferrer"
               class="group w-12 h-12 bg-[#C2A191]/20 rounded-full flex items-center justify-center hover:bg-[#C2A191] transition-all duration-300 transform hover:scale-110"
             >
               <svg
@@ -282,6 +284,8 @@
             <a
               href="https://www.instagram.com/vdlphotographe/"
               target="_blank"
+              aria-label="VDL Photographe sur Instagram"
+              rel="noopener noreferrer"
               class="group w-12 h-12 bg-[#C2A191]/20 rounded-full flex items-center justify-center hover:bg-[#C2A191] transition-all duration-300 transform hover:scale-110"
             >
               <svg
@@ -295,6 +299,7 @@
 
             <a
               href="mailto:Vdlphotographe@outlook.com"
+              aria-label="Envoyer un email à VDL Photographe"
               class="group w-12 h-12 bg-[#C2A191]/20 rounded-full flex items-center justify-center hover:bg-[#C2A191] transition-all duration-300 transform hover:scale-110"
             >
               <svg
@@ -316,7 +321,7 @@
           <!-- Copyright -->
           <div class="text-center">
             <p class="text-[#D4B5A0] text-sm">
-              © 2025 Valeria Daniele Leonardi Photography. Tous droits réservés.
+              © {{ currentYear }} Valeria Daniele Leonardi Photography. Tous droits réservés.
             </p>
             <p class="mt-1">
               <a
@@ -337,6 +342,11 @@
 <script>
 export default {
   name: "Footer",
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
+  },
 };
 </script>
 

@@ -1,15 +1,16 @@
 <template>
-  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
+  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen overflow-x-hidden">
     <Header />
 
     <!-- Hero Section compact -->
-    <section class="relative overflow-hidden py-4 md:py-8 px-4">
-      <!-- Image de fond -->
+    <section class="relative overflow-hidden min-h-[70vh] flex flex-col justify-center py-4 md:py-8 px-4">
+      <!-- Background image mariage6 -->
       <img
-        src="@/assets/famille_5.jpg"
+        src="@/assets/mariage6.jpg"
         alt=""
         aria-hidden="true"
-        class="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none"
+        fetchpriority="high"
+        class="absolute inset-0 w-full h-full object-cover opacity-25"
       />
 
       <!-- Background decoratif -->
@@ -22,7 +23,7 @@
         ></div>
       </div>
 
-      <div class="relative max-w-6xl mx-auto text-center">
+<div class="relative max-w-6xl mx-auto text-center w-full">
         <div>
           <h1
             class="text-3xl md:text-5xl lg:text-6xl font-serif tracking-wide leading-tight mb-4 hero-title"
@@ -73,6 +74,13 @@
       </div>
     </section>
 
+    <!-- Section caméra animée -->
+    <section class="camera-section w-full flex items-center justify-center overflow-hidden">
+      <div class="camera-zoom-wrapper">
+        <CameraAnimated />
+      </div>
+    </section>
+
     <!-- Grille de photos EN PREMIER - plus visible -->
     <section class="py-6 md:py-12 px-4" ref="portfolioSection">
       <div class="max-w-7xl mx-auto">
@@ -94,6 +102,7 @@
               <img
                 src="@/assets/portrait_5.jpg"
                 alt="Séance portrait par VDL Photographe à Clouange, Moselle"
+                loading="lazy"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -116,6 +125,7 @@
               <img
                 src="@/assets/famille_1.jpg"
                 alt="Photo de couple par VDL Photographe, photographe en Moselle et alentours"
+                loading="lazy"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -138,6 +148,7 @@
               <img
                 src="@/assets/grossesse_2.jpg"
                 alt="Séance photo grossesse par VDL Photographe, photographe à Clouange, Moselle"
+                loading="lazy"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -160,6 +171,7 @@
               <img
                 src="@/assets/mariage2.jpg"
                 alt="Photo de mariage par VDL Photographe en Moselle et au Luxembourg"
+                loading="lazy"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div
@@ -277,10 +289,10 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-
+import CameraAnimated from "@/components/CameraAnimated.vue";
 export default {
   name: "Accueil",
-  components: { Header, Footer },
+  components: { Header, Footer, CameraAnimated },
 
   mounted() {
     this.initAnimations();
@@ -416,4 +428,14 @@ export default {
 .link-hover-effect:hover::after {
   width: 100%;
 }
+
+.camera-section { height: 160px; }
+@media (min-width: 640px)  { .camera-section { height: 230px; } }
+@media (min-width: 768px)  { .camera-section { height: 300px; } }
+@media (min-width: 1024px) { .camera-section { height: 360px; } }
+
+.camera-zoom-wrapper { zoom: 0.42; }
+@media (min-width: 640px)  { .camera-zoom-wrapper { zoom: 0.66; } }
+@media (min-width: 768px)  { .camera-zoom-wrapper { zoom: 0.88; } }
+@media (min-width: 1024px) { .camera-zoom-wrapper { zoom: 1; } }
 </style>

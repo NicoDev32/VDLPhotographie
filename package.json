@@ -30,6 +30,7 @@
     "postcss": "^7.0.39",
     "sass": "^1.89.2",
     "sass-loader": "^8.0.2",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.1.10",
     "vue-template-compiler": "^2.6.11"
   }
