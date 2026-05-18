@@ -21,12 +21,16 @@ export default {
 </script>
 
 <style lang="scss">
-html,
+html {
+  overflow-x: clip;
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
 }
 
 #app {
