@@ -1,26 +1,27 @@
 {
-    "redirects": [
-      {
-        "source": "/(.*)",
-        "destination": "https://vdlphotographe.fr/$1",
-        "permanent": true,
-        "has": [
-          {
-            "type": "host",
-            "value": "vdlphotographe.com"
-          }
-        ]
-      },
-      {
-        "source": "/(.*)",
-        "destination": "https://vdlphotographe.fr/$1",
-        "permanent": true,
-        "has": [
-          {
-            "type": "host",
-            "value": "www.vdlphotographe.com"
-          }
-        ]
-      }
-    ]
-  }
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://vdlphotographe.fr/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "vdlphotographe.com"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://vdlphotographe.fr/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "www.vdlphotographe.com"
+        }
+      ]
+    }
+  ]
+}
