@@ -509,8 +509,9 @@ export default {
 /* Animations de scroll */
 .scroll-fade-in {
   opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.9s ease-out;
+  transform: translateY(30px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  will-change: opacity, transform;
 }
 
 .scroll-fade-in.animate-in {

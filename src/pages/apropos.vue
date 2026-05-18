@@ -1,5 +1,5 @@
 <template>
-  <div class="apropos bg-[#FFFBF8] text-[#2E2B29] min-h-screen overflow-x-hidden">
+  <div class="apropos bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
     <!-- En-tête avec nom -->
     <section class="relative overflow-hidden py-6 md:py-12 px-4 min-h-[40vh] flex flex-col justify-center">
 <!-- Déco fond -->
@@ -226,8 +226,9 @@ export default {
 
 .scroll-fade-in {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
 }
 
 .scroll-fade-in.animate-in {
