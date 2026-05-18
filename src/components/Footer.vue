@@ -129,7 +129,7 @@
                 <img
                   src="@/assets/picto_mariage.png"
                   alt="Mariage"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Mariage</span>
               </router-link>
@@ -142,7 +142,7 @@
                 <img
                   src="@/assets/picto_grossesse.png"
                   alt="Grossesse"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Grossesse</span>
               </router-link>
@@ -155,7 +155,7 @@
                 <img
                   src="@/assets/picto_naissance.png"
                   alt="Naissance"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Naissance</span>
               </router-link>
@@ -168,7 +168,7 @@
                 <img
                   src="@/assets/picto_famille.png"
                   alt="Famille"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Famille</span>
               </router-link>
@@ -181,7 +181,7 @@
                 <img
                   src="@/assets/picto_portrait.png"
                   alt="Portrait"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Portrait</span>
               </router-link>
@@ -201,7 +201,7 @@
                 <img
                   src="@/assets/picto_accueil.png"
                   alt="Contact"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Accueil</span>
               </router-link>
@@ -214,7 +214,7 @@
                 <img
                   src="@/assets/picto_contact.png"
                   alt="Contact"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>Contact</span>
               </router-link>
@@ -227,7 +227,7 @@
                 <img
                   src="@/assets/picto_a_propos.png"
                   alt="A propos"
-                  class="w-6 h-6 object-contain"
+                  class="w-6 h-6 object-contain brightness-0 invert"
                 />
                 <span>À Propos</span>
               </router-link>
