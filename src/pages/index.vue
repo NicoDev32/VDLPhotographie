@@ -1,5 +1,5 @@
 <template>
-  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen overflow-x-hidden">
+  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
     <!-- Hero Section compact -->
     <section class="relative overflow-hidden min-h-[70vh] flex flex-col justify-center py-4 md:py-8 px-4">
       <img
@@ -278,8 +278,9 @@ export default {
 }
 .scroll-fade-in {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
 }
 .scroll-fade-in.animate-in {
   opacity: 1;
