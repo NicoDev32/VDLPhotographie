@@ -360,74 +360,60 @@
       </div>
     </section>
 
-    <!-- CTA Final Spectaculaire avec animations -->
-    <section class="py-20 px-4 relative overflow-hidden" ref="ctaSection">
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-[#C2A191] via-[#E6C7B8] to-[#C2A191]"
-      ></div>
-      <div class="absolute inset-0 bg-black/20"></div>
-      <p
-        class="text-sm md:text-base text-white/80 italic mb-16 max-w-2xl mx-auto leading-snug scroll-fade-in"
-      >
-        Les frais de déplacement sont inclus dans les forfaits, sauf pour les
-        mariages situés à plus de 40 km du Home-Studio (Clouange). Au-delà de
-        cette distance, des frais supplémentaires pourront vous être
-        communiqués.
-      </p>
-      <div class="relative z-10 max-w-4xl mx-auto text-center scroll-fade-in">
-        <h2 class="text-4xl md:text-6xl font-serif mb-6">
-          Votre Jour J Mérite l'Excellence
+    <!-- Note déplacement -->
+    <div class="px-4 py-8 bg-[#FAF5F0]">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex items-start gap-4 bg-white border border-[#C2A191]/30 rounded-2xl px-6 py-5 shadow-sm scroll-fade-in">
+          <div class="shrink-0 w-10 h-10 rounded-full bg-[#C2A191]/15 flex items-center justify-center mt-0.5">
+            <svg class="w-5 h-5 text-[#C2A191]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-[#2E2B29] mb-1 tracking-wide uppercase">Frais de déplacement</p>
+            <p class="text-sm text-[#2E2B29]/70 leading-relaxed">
+              Inclus dans tous les forfaits jusqu'à 40 km du Home-Studio (Clouange). Au-delà, des frais supplémentaires pourront vous être communiqués.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Final -->
+    <section class="relative overflow-hidden py-24 px-4 bg-[#FFFBF8]" ref="ctaSection">
+      <div class="absolute inset-0 opacity-30">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-[#C2A191] rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-[#E6C7B8] rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative z-10 max-w-3xl mx-auto text-center scroll-fade-in">
+        <p class="text-sm tracking-[0.35em] uppercase text-[#C2A191] font-semibold mb-6">Votre histoire commence ici</p>
+
+        <h2 class="text-3xl md:text-5xl font-serif text-[#2E2B29] mb-4 leading-tight">
+          Votre Jour J mérite<br/>
+          <span class="text-[#C2A191]">l'Excellence</span>
         </h2>
-        <p class="text-xl md:text-2xl mb-8 opacity-90">
+
+        <div class="flex items-center justify-center gap-3 my-6">
+          <div class="w-16 h-px bg-[#C2A191]"></div>
+          <div class="w-2 h-2 rounded-full bg-[#C2A191]"></div>
+          <div class="w-16 h-px bg-[#C2A191]"></div>
+        </div>
+
+        <p class="text-base md:text-lg text-[#2E2B29]/60 mb-10 leading-relaxed font-light">
           Ensemble, créons des souvenirs qui traverseront les générations
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <nuxt-link
-            to="/formulaire"
-            class="inline-flex w-auto mx-auto items-center px-8 py-4 bg-white text-[#C2A191] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
-          >
-            Contactez-moi
-            <svg
-              class="ml-3 w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              ></path>
-            </svg>
-          </nuxt-link>
-
-          <!-- <a
-            href="tel:+33619037490"
-            class="inline-flex items-center px-8 py-4 border-2 border-white hover:bg-white hover:text-[#C2A191] font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
-          >
-            <svg
-              class="mr-3 w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              ></path>
-            </svg>
-            <span>Appelez-moi</span>
-          </a> -->
-        </div>
-
-        <!-- <p class="text-sm mt-8 opacity-75">
-          📞 Réponse sous 24h • 💝 Devis personnalisé gratuit • 📍 Moselle &
-          alentours
-        </p> -->
+        <nuxt-link
+          to="/formulaire"
+          class="inline-flex items-center px-10 py-4 bg-[#2E2B29] hover:bg-[#2E2B29]/85 text-white font-semibold text-lg rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+        >
+          Me contacter
+          <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </nuxt-link>
       </div>
     </section>
   </div>

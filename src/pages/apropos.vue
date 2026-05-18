@@ -26,13 +26,6 @@
       </div>
     </section>
 
-    <!-- Section caméra animée -->
-    <section class="camera-section w-full flex items-center justify-center overflow-hidden">
-      <div class="camera-zoom-wrapper">
-        <CameraAnimated />
-      </div>
-    </section>
-
     <!-- Biographie et valeurs -->
     <!-- Nouveau contenu texte -->
     <section class="py-8 md:py-16 px-4 relative">
@@ -169,7 +162,6 @@
 </template>
 
 <script>
-import CameraAnimated from "@/components/CameraAnimated.vue";
 export default {
   head() {
     return {
@@ -243,13 +235,4 @@ export default {
   transform: translateY(0);
 }
 
-.camera-section { height: 160px; }
-@media (min-width: 640px)  { .camera-section { height: 230px; } }
-@media (min-width: 768px)  { .camera-section { height: 300px; } }
-@media (min-width: 1024px) { .camera-section { height: 360px; } }
-
-.camera-zoom-wrapper { zoom: 0.42; }
-@media (min-width: 640px)  { .camera-zoom-wrapper { zoom: 0.66; } }
-@media (min-width: 768px)  { .camera-zoom-wrapper { zoom: 0.88; } }
-@media (min-width: 1024px) { .camera-zoom-wrapper { zoom: 1; } }
 </style>

@@ -125,19 +125,57 @@
       </div>
     </section>
 
-    <!-- Onglets categories -->
-    <section class="py-8 md:py-16 px-4" ref="specialitiesSection">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-2xl md:text-3xl font-serif text-center mb-8 md:mb-12 text-[#2E2B29] scroll-fade-in">
-          Mes univers preferes
-        </h3>
+    <!-- Univers categories -->
+    <section class="py-12 md:py-20 px-4 bg-gradient-to-b from-[#FFFBF8] to-[#F7EFE9]" ref="specialitiesSection">
+      <div class="max-w-5xl mx-auto">
 
-        <div class="flex flex-wrap justify-center gap-4 md:gap-8 scroll-fade-in">
-          <nuxt-link to="/mariage" class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300">Mariage</nuxt-link>
-          <nuxt-link to="/naissance" class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300">Naissance</nuxt-link>
-          <nuxt-link to="/famille" class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300">Famille</nuxt-link>
-          <nuxt-link to="/grossesse" class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300">Grossesse</nuxt-link>
-          <nuxt-link to="/portrait" class="link-hover-effect px-6 py-3 text-lg font-serif text-[#2E2B29] hover:text-[#C2A191] transition-colors duration-300">Portrait</nuxt-link>
+        <div class="text-center mb-12 scroll-fade-in">
+          <p class="text-sm tracking-[0.35em] uppercase text-[#C2A191] font-semibold mb-3">Expertises</p>
+          <h3 class="text-2xl md:text-4xl font-serif text-[#2E2B29]">Mes univers préférés</h3>
+          <div class="flex items-center justify-center gap-3 mt-4">
+            <div class="w-16 h-px bg-[#C2A191]"></div>
+            <div class="w-2 h-2 rounded-full bg-[#C2A191]"></div>
+            <div class="w-16 h-px bg-[#C2A191]"></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-4">
+
+          <nuxt-link to="/mariage" class="univers-card group flex flex-col items-center gap-4 p-6 rounded-2xl bg-white shadow-sm hover:shadow-lg border border-transparent hover:border-[#C2A191]/30 transition-all duration-400 scroll-fade-in">
+            <div class="w-16 h-16 rounded-full bg-[#C2A191]/15 group-hover:bg-[#C2A191] flex items-center justify-center transition-all duration-300">
+              <img src="~/assets/picto_mariage.png" alt="Mariage" class="w-8 h-8 object-contain transition-all duration-300 univers-icon" />
+            </div>
+            <span class="text-base font-serif text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300 tracking-wide">Mariage</span>
+          </nuxt-link>
+
+          <nuxt-link to="/naissance" class="univers-card group flex flex-col items-center gap-4 p-6 rounded-2xl bg-white shadow-sm hover:shadow-lg border border-transparent hover:border-[#C2A191]/30 transition-all duration-400 scroll-fade-in">
+            <div class="w-16 h-16 rounded-full bg-[#C2A191]/15 group-hover:bg-[#C2A191] flex items-center justify-center transition-all duration-300">
+              <img src="~/assets/picto_naissance.png" alt="Naissance" class="w-8 h-8 object-contain transition-all duration-300 univers-icon" />
+            </div>
+            <span class="text-base font-serif text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300 tracking-wide">Naissance</span>
+          </nuxt-link>
+
+          <nuxt-link to="/famille" class="univers-card group flex flex-col items-center gap-4 p-6 rounded-2xl bg-white shadow-sm hover:shadow-lg border border-transparent hover:border-[#C2A191]/30 transition-all duration-400 scroll-fade-in">
+            <div class="w-16 h-16 rounded-full bg-[#C2A191]/15 group-hover:bg-[#C2A191] flex items-center justify-center transition-all duration-300">
+              <img src="~/assets/picto_famille.png" alt="Famille" class="w-8 h-8 object-contain transition-all duration-300 univers-icon" />
+            </div>
+            <span class="text-base font-serif text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300 tracking-wide">Famille</span>
+          </nuxt-link>
+
+          <nuxt-link to="/grossesse" class="univers-card group flex flex-col items-center gap-4 p-6 rounded-2xl bg-white shadow-sm hover:shadow-lg border border-transparent hover:border-[#C2A191]/30 transition-all duration-400 scroll-fade-in">
+            <div class="w-16 h-16 rounded-full bg-[#C2A191]/15 group-hover:bg-[#C2A191] flex items-center justify-center transition-all duration-300">
+              <img src="~/assets/picto_grossesse.png" alt="Grossesse" class="w-8 h-8 object-contain transition-all duration-300 univers-icon" />
+            </div>
+            <span class="text-base font-serif text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300 tracking-wide">Grossesse</span>
+          </nuxt-link>
+
+          <nuxt-link to="/portrait" class="univers-card group flex flex-col items-center gap-4 p-6 rounded-2xl bg-white shadow-sm hover:shadow-lg border border-transparent hover:border-[#C2A191]/30 transition-all duration-400 scroll-fade-in col-span-2 sm:col-span-1">
+            <div class="w-16 h-16 rounded-full bg-[#C2A191]/15 group-hover:bg-[#C2A191] flex items-center justify-center transition-all duration-300">
+              <img src="~/assets/picto_portrait.png" alt="Portrait" class="w-8 h-8 object-contain transition-all duration-300 univers-icon" />
+            </div>
+            <span class="text-base font-serif text-[#2E2B29] group-hover:text-[#C2A191] transition-colors duration-300 tracking-wide">Portrait</span>
+          </nuxt-link>
+
         </div>
       </div>
     </section>
@@ -252,6 +290,10 @@ export default {
 .scroll-fade-in:nth-child(3) { transition-delay: 0.3s; }
 .scroll-fade-in:nth-child(4) { transition-delay: 0.4s; }
 
+.univers-card:hover .univers-icon {
+  filter: brightness(0) invert(1);
+}
+
 .link-hover-effect {
   position: relative;
   display: inline-block;
@@ -269,12 +311,12 @@ export default {
 }
 .link-hover-effect:hover::after { width: 100%; }
 
-.camera-section { height: 160px; }
-@media (min-width: 640px)  { .camera-section { height: 230px; } }
-@media (min-width: 768px)  { .camera-section { height: 300px; } }
-@media (min-width: 1024px) { .camera-section { height: 360px; } }
-.camera-zoom-wrapper { zoom: 0.42; }
-@media (min-width: 640px)  { .camera-zoom-wrapper { zoom: 0.66; } }
-@media (min-width: 768px)  { .camera-zoom-wrapper { zoom: 0.88; } }
-@media (min-width: 1024px) { .camera-zoom-wrapper { zoom: 1; } }
+.camera-section { height: 90px; padding-bottom: 10px; }
+@media (min-width: 640px)  { .camera-section { height: 120px; } }
+@media (min-width: 768px)  { .camera-section { height: 150px; } }
+@media (min-width: 1024px) { .camera-section { height: 180px; } }
+.camera-zoom-wrapper { zoom: 0.22; }
+@media (min-width: 640px)  { .camera-zoom-wrapper { zoom: 0.32; } }
+@media (min-width: 768px)  { .camera-zoom-wrapper { zoom: 0.42; } }
+@media (min-width: 1024px) { .camera-zoom-wrapper { zoom: 0.50; } }
 </style>
