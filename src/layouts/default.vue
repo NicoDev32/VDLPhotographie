@@ -1,14 +1,22 @@
 <template>
   <div id="app" class="min-h-screen">
+    <Header />
     <nuxt />
+    <Footer />
     <CookieBanner />
     <WhatsAppButton />
   </div>
 </template>
 
 <script>
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
+import CookieBanner from '~/components/CookieBanner.vue'
+import WhatsAppButton from '~/components/WhatsAppButton.vue'
+
 export default {
   name: 'DefaultLayout',
+  components: { Header, Footer, CookieBanner, WhatsAppButton },
 }
 </script>
 

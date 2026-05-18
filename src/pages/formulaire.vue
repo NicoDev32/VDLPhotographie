@@ -1,7 +1,5 @@
 <template>
   <main class="bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
-    <Header />
-
     <!-- Hero avec animations -->
     <section class="text-center py-8 px-4">
       <h1 class="text-4xl md:text-5xl font-serif tracking-wide mb-2 hero-title">
@@ -422,8 +420,6 @@
         <p class="text-sm text-[#C2A191]">Redirection vers l'accueil...</p>
       </div>
     </div>
-
-    <Footer />
   </main>
 </template>
 

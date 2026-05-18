@@ -1,7 +1,5 @@
 <template>
   <div class="bg-[#FFFBF8] text-[#2E2B29] min-h-screen" v-if="city">
-    <Header />
-
     <!-- Breadcrumb -->
     <nav class="max-w-6xl mx-auto px-4 pt-4 pb-2 text-sm text-[#2E2B29]/60">
       <ol class="flex flex-wrap items-center gap-1">
@@ -163,13 +161,10 @@
         </nuxt-link>
       </div>
     </section>
-
-    <Footer />
   </div>
 
   <!-- 404 ville -->
   <div v-else class="bg-[#FFFBF8] min-h-screen flex items-center justify-center">
-    <Header />
     <div class="text-center px-4 mt-20">
       <h1 class="text-3xl font-serif mb-4 text-[#2E2B29]">Commune non couverte</h1>
       <p class="text-[#2E2B29]/70 mb-8">Cette localité ne figure pas dans la zone d'intervention.</p>

@@ -1,7 +1,5 @@
 <template>
   <div class="naissance bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
-    <Header />
-
     <!-- Hero Section avec animations -->
     <section class="text-center py-8 md:py-12 px-4">
       <h1
@@ -338,8 +336,6 @@
         </div>
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 

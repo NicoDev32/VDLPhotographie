@@ -1,7 +1,5 @@
 <template>
   <div class="apropos bg-[#FFFBF8] text-[#2E2B29] min-h-screen overflow-x-hidden">
-    <Header />
-
     <!-- En-tête avec nom -->
     <section class="relative overflow-hidden py-6 md:py-12 px-4 min-h-[40vh] flex flex-col justify-center">
 <!-- Déco fond -->
@@ -167,8 +165,6 @@
         </nuxt-link>
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 
@@ -194,7 +190,6 @@ export default {
 
 
   name: "APropos",
-  components: { Header, Footer, CameraAnimated },
   mounted() {
     this.initAnimations();
     this.setupScrollObserver();

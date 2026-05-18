@@ -2,8 +2,6 @@
   <div
     class="mariage bg-gradient-to-br from-[#FFFBF8] via-[#FFF8F0] to-[#F8F4F0] text-[#2E2B29] min-h-screen"
   >
-    <Header />
-
     <!-- Hero Section Magnifique avec animations -->
     <section class="relative py-10 md:py-16 px-4">
       <!-- Decorative elements -->
@@ -432,8 +430,6 @@
         </p> -->
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 

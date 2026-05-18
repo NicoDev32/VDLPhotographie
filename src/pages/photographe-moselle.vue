@@ -1,7 +1,5 @@
 <template>
   <div class="bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
-    <Header />
-
     <!-- Breadcrumb -->
     <nav class="max-w-6xl mx-auto px-4 pt-4 pb-2 text-sm text-[#2E2B29]/60">
       <ol class="flex flex-wrap items-center gap-1">
@@ -125,8 +123,6 @@
         </nuxt-link>
       </div>
     </section>
-
-    <Footer />
   </div>
 </template>
 
