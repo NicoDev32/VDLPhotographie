@@ -1,5 +1,5 @@
 <template>
-  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen overflow-x-hidden">
+  <div class="accueil bg-[#FFFBF8] text-[#2E2B29] min-h-screen">
     <!-- Hero Section compact -->
     <section class="relative overflow-hidden min-h-[70vh] flex flex-col justify-center py-4 md:py-8 px-4">
       <img
