@@ -463,6 +463,7 @@ export default {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-in");
+            observer.unobserve(entry.target);
           }
         });
       }, options);
@@ -510,7 +511,6 @@ export default {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
 }
 
 .scroll-fade-in.animate-in {
