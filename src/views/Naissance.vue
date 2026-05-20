@@ -359,7 +359,7 @@ export default {
         require("../assets/naissance_3.jpg"),
         require("../assets/naissance_5.jpg"),
         require("../assets/naissance_6.jpg"),
-      //  require("../assets/naissance_7.jpg"),
+        require("../assets/naissance_7.jpg"),
       //  require("../assets/naissance_8.jpg"),
       //  require("../assets/naissance_9.jpg"),
       ],
