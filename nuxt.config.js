@@ -5,6 +5,12 @@ module.exports = {
 
   target: 'static',
 
+  server: {
+    host: '0.0.0.0',
+    port: 3000,
+    timing: false,
+  },
+
   head: {
     htmlAttrs: { lang: 'fr' },
     titleTemplate: '%s | VDL Photographe',
@@ -31,6 +37,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/favicon.ico' },
       { rel: 'manifest', href: '/manifest.json' },
+      { rel: 'alternate', type: 'text/plain', href: '/llms.txt', title: 'LLMs.txt' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       {
