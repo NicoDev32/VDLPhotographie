@@ -378,6 +378,10 @@ export default {
     };
   },
 
+  created() {
+    this._animatedElements = [];
+  },
+
   mounted() {
     // ✨ Initialiser les animations
     this.initAnimations();
@@ -388,6 +392,18 @@ export default {
       if (event.which == 37) this.previousPhoto();
       if (event.which == 39) this.nextPhoto();
     });
+  },
+
+  updated() {
+    if (this._animatedElements) {
+      this._animatedElements.forEach((el) => {
+        if (el.isConnected) el.classList.add("animate-in");
+      });
+    }
+  },
+
+  beforeDestroy() {
+    if (this._scrollObserver) this._scrollObserver.disconnect();
   },
 
   methods: {
@@ -419,11 +435,15 @@ export default {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-in");
+            if (!this._animatedElements.includes(entry.target)) {
+              this._animatedElements.push(entry.target);
+            }
             observer.unobserve(entry.target);
           }
         });
       }, options);
 
+      this._scrollObserver = observer;
       // Observer tous les éléments avec la classe scroll-fade-in
       const scrollElements = document.querySelectorAll(".scroll-fade-in");
       scrollElements.forEach((el) => observer.observe(el));
