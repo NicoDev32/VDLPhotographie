@@ -3,6 +3,10 @@ const cities = require('./src/data/citiesVdl.json')
 module.exports = {
   srcDir: 'src/',
 
+  dir: {
+    static: '../static',
+  },
+
   target: 'static',
 
   server: {
