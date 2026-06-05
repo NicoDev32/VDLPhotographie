@@ -23,5 +23,12 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
+# Fichiers sensibles
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+
 # Sitemaps
 Sitemap: https://vdlphotographe.fr/sitemap.xml
