@@ -121,16 +121,48 @@ module.exports = {
 
   router: {
     extendRoutes(routes, resolve) {
+      const dynamicPages = [
+        'PhotographeVille',
+        'StudioPhotoVille',
+        'ShootingPhotoVille',
+        'PhotographeBebeVille',
+      ]
+      dynamicPages.forEach(name => {
+        const idx = routes.findIndex(r => r.name === name)
+        if (idx !== -1) routes.splice(idx, 1)
+      })
+
+      // Les routes spécifiques AVANT les routes génériques (photographe-bebe- avant photographe-)
+      routes.push({
+        name: 'PhotographeBebeVille',
+        path: '/photographe-bebe-:citySlug',
+        component: resolve(__dirname, 'src/pages/PhotographeBebeVille.vue'),
+      })
       routes.push({
         name: 'PhotographeVille',
         path: '/photographe-:citySlug',
         component: resolve(__dirname, 'src/pages/PhotographeVille.vue'),
+      })
+      routes.push({
+        name: 'StudioPhotoVille',
+        path: '/studio-photo-:citySlug',
+        component: resolve(__dirname, 'src/pages/StudioPhotoVille.vue'),
+      })
+      routes.push({
+        name: 'ShootingPhotoVille',
+        path: '/shooting-photo-:citySlug',
+        component: resolve(__dirname, 'src/pages/ShootingPhotoVille.vue'),
       })
     },
   },
 
   generate: {
     fallback: true,
-    routes: cities.map(c => `/photographe-${c.slug}`),
+    routes: [
+      ...cities.map(c => `/photographe-${c.slug}`),
+      ...cities.map(c => `/studio-photo-${c.slug}`),
+      ...cities.map(c => `/shooting-photo-${c.slug}`),
+      ...cities.map(c => `/photographe-bebe-${c.slug}`),
+    ],
   },
 }
