@@ -208,6 +208,18 @@
             </li>
             <li>
               <router-link
+                to="/blog"
+                class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2 font-medium"
+              >
+                <svg class="w-6 h-6 text-[#D4B5A0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h9l5 5v9a2 2 0 01-2 2z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 9h5M7 13h8M7 17h8" />
+                </svg>
+                <span>Blog</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link
                 to="/formulaire"
                 class="text-[#D4B5A0] hover:text-[#C2A191] transition-colors duration-300 flex items-center space-x-2 font-medium"
               >
