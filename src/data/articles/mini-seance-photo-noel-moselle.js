@@ -15,7 +15,7 @@ module.exports = {
   cover: '/blog/mini-seance-photo-noel-moselle.jpg',
   coverAlt:
     'Famille lors d une mini-séance photo de Noël en studio en Moselle par VDL Photographe',
-  date: '2026-06-18',
+  date: '2026-01-05',
   updated: '2026-06-30',
   readingTime: 5,
   related: [

@@ -7,7 +7,6 @@ const articles = [
   require('./quand-faire-seance-photo-grossesse'),
   require('./photo-naissance-7-14-jours'),
   require('./tenues-seance-photo-famille'),
-  require('./lieux-seance-photo-exterieur-metz-thionville'),
   require('./studio-ou-exterieur-seance-photo'),
   require('./idees-seance-photo-couple'),
   require('./mini-seance-photo-noel-moselle'),

@@ -20,7 +20,6 @@ module.exports = {
   readingTime: 7,
   related: [
     'prix-photographe-professionnel-moselle',
-    'lieux-seance-photo-exterieur-metz-thionville',
     'idees-seance-photo-couple',
   ],
   content: `

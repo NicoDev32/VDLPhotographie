@@ -1,8 +1,9 @@
 # Images du blog VDL Photographe
 
-Les images de couverture des articles sont **déjà en place** : elles réutilisent des
-photos déjà présentes dans `src/assets/`, copiées dans `static/blog/` sous des noms
-optimisés pour le SEO. Rien n'est obligatoire de votre côté.
+Les images de couverture des articles sont **déjà en place** dans `static/blog/`, sous
+des noms optimisés pour le SEO. La plupart utilisent désormais des photos dédiées
+(fournies par vos soins) ; deux réutilisent encore une photo du site. Toutes sont
+compressées en JPEG (< 250 Ko) pour un chargement rapide.
 
 ## Où se trouvent les images
 
@@ -13,18 +14,17 @@ optimisés pour le SEO. Rien n'est obligatoire de votre côté.
 
 ## Correspondance photo réutilisée / article
 
-| Article | Photo existante réutilisée | Fichier dans static/blog/ |
+| Article | Photo utilisée | Fichier dans static/blog/ |
 |---|---|---|
-| Mariage | `src/assets/mariage1.jpg` | `photographe-mariage-moselle.jpg` |
-| Grossesse | `src/assets/grossesse_1.jpg` | `seance-photo-grossesse-moselle.jpg` |
-| Naissance | `src/assets/naissance_1.jpg` | `photographe-naissance-nouveau-ne-moselle.jpg` |
-| Famille (tenues) | `src/assets/famille_1.jpg` | `tenues-seance-photo-famille.jpg` |
-| Lieux Metz / Thionville | `src/assets/famille_5.jpg` | `lieux-seance-photo-metz-thionville.jpg` |
-| Studio ou extérieur | `src/assets/portrait_1.jpg` | `seance-photo-studio-exterieur.jpg` |
-| Couple | `src/assets/couple.jpg` | `seance-photo-couple-moselle.jpg` |
-| Noël | `src/assets/famille_3.jpg` | `mini-seance-photo-noel-moselle.jpg` |
-| Prix / tarifs | `src/assets/portrait_moi.jpg` | `prix-photographe-professionnel-moselle.jpg` |
-| Portrait | `src/assets/portrait_2.jpg` | `seance-portrait-femme-moselle.jpg` |
+| Mariage | Photo dédiée | `photographe-mariage-moselle.jpg` |
+| Grossesse | Photo dédiée | `seance-photo-grossesse-moselle.jpg` |
+| Naissance | Photo dédiée | `photographe-naissance-nouveau-ne-moselle.jpg` |
+| Famille (tenues) | `src/assets/famille_1.jpg` (réutilisée) | `tenues-seance-photo-famille.jpg` |
+| Studio ou extérieur | Photo dédiée | `seance-photo-studio-exterieur.jpg` |
+| Couple | Photo dédiée | `seance-photo-couple-moselle.jpg` |
+| Noël | Photo dédiée | `mini-seance-photo-noel-moselle.jpg` |
+| Prix / tarifs | `src/assets/portrait_moi.jpg` (réutilisée) | `prix-photographe-professionnel-moselle.jpg` |
+| Portrait | Photo dédiée | `seance-portrait-femme-moselle.jpg` |
 
 ## Remplacer une image plus tard (facultatif)
 
