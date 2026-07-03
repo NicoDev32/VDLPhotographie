@@ -19,7 +19,6 @@ module.exports = {
   updated: '2026-06-30',
   readingTime: 6,
   related: [
-    'lieux-seance-photo-exterieur-metz-thionville',
     'tenues-seance-photo-famille',
     'reussir-seance-portrait-femme',
   ],
@@ -43,7 +42,6 @@ module.exports = {
   <li><strong>Des décors changeants</strong> au fil des saisons, des champs dorés de l'été aux teintes chaudes de l'automne.</li>
   <li><strong>De l'espace</strong> pour que les enfants courent et que chacun se détende.</li>
 </ul>
-<p>Pour trouver le bon endroit, découvrez mon guide des <a href="/blog/lieux-seance-photo-exterieur-metz-thionville" class="article-link">plus beaux lieux autour de Metz et Thionville</a>.</p>
 
 <h2>Quel choix selon votre prestation</h2>
 <ul>

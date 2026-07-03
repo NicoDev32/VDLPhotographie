@@ -19,7 +19,6 @@ module.exports = {
   updated: '2026-06-30',
   readingTime: 6,
   related: [
-    'lieux-seance-photo-exterieur-metz-thionville',
     'comment-choisir-photographe-mariage-moselle',
     'studio-ou-exterieur-seance-photo',
   ],
@@ -39,7 +38,7 @@ module.exports = {
 </ul>
 
 <h2>Bien choisir le lieu</h2>
-<p>Le décor raconte aussi votre histoire. Un champ au coucher du soleil pour le romantisme, des ruelles pour une ambiance plus urbaine, un bord de Moselle pour la douceur. Pour vous inspirer, consultez mon guide des <a href="/blog/lieux-seance-photo-exterieur-metz-thionville" class="article-link">plus beaux lieux autour de Metz et Thionville</a>. En cas de météo incertaine, le home-studio reste une alternative élégante et chaleureuse.</p>
+<p>Le décor raconte aussi votre histoire. Un champ au coucher du soleil pour le romantisme, des ruelles pour une ambiance plus urbaine, un bord de Moselle pour la douceur. En cas de météo incertaine, le home-studio reste une alternative élégante et chaleureuse.</p>
 
 <h2>Comment être à l'aise devant l'objectif</h2>
 <p>Quelques conseils simples pour profiter pleinement de la séance :</p>
