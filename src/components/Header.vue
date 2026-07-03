@@ -34,6 +34,13 @@
           <img src="@/assets/picto_portrait.png" alt="" class="nav-icon lg:w-4 lg:h-4 xl:w-5 xl:h-5 object-contain" />
           Portrait
         </nuxt-link>
+        <nuxt-link to="/blog" class="nav-link">
+          <svg class="lg:w-4 lg:h-4 xl:w-5 xl:h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h9l5 5v9a2 2 0 01-2 2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 9h5M7 13h8M7 17h8" />
+          </svg>
+          Blog
+        </nuxt-link>
         <nuxt-link to="/apropos" class="nav-link">
           <img src="@/assets/picto_a_propos.png" alt="" class="nav-icon lg:w-4 lg:h-4 xl:w-5 xl:h-5 object-contain" />
           À propos
@@ -85,6 +92,13 @@
         <nuxt-link @click.native="closeMenu" to="/portrait" class="nav-link-mobile">
           <img src="@/assets/picto_portrait.png" alt="" class="nav-icon w-5 h-5 object-contain" />
           Portrait
+        </nuxt-link>
+        <nuxt-link @click.native="closeMenu" to="/blog" class="nav-link-mobile">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h9l5 5v9a2 2 0 01-2 2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 9h5M7 13h8M7 17h8" />
+          </svg>
+          Blog
         </nuxt-link>
         <nuxt-link @click.native="closeMenu" to="/apropos" class="nav-link-mobile">
           <img src="@/assets/picto_a_propos.png" alt="" class="nav-icon w-5 h-5 object-contain" />

@@ -1,4 +1,5 @@
 const cities = require('./src/data/citiesVdl.json')
+const articles = require('./src/data/articles')
 
 module.exports = {
   srcDir: 'src/',
@@ -163,6 +164,8 @@ module.exports = {
   generate: {
     fallback: true,
     routes: [
+      '/blog',
+      ...articles.map(a => `/blog/${a.slug}`),
       ...cities.map(c => `/photographe-${c.slug}`),
       ...cities.map(c => `/studio-photo-${c.slug}`),
       ...cities.map(c => `/shooting-photo-${c.slug}`),
