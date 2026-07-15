@@ -657,11 +657,20 @@ export default {
         return; // Arrêter si validation échoue
       }
 
+      const endpoint = process.env.VUE_APP_ROUTE_POST_CONTACT;
+      if (!endpoint) {
+        console.error(
+          "VUE_APP_ROUTE_POST_CONTACT est absente du build : l'endpoint de contact n'est pas configuré."
+        );
+        alert("Une erreur est survenue. Veuillez réessayer.");
+        return;
+      }
+
       this.sending = true;
       this.successPopup = false;
 
       try {
-        const response = await fetch(process.env.VUE_APP_ROUTE_POST_CONTACT, {
+        const response = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(this.form),
