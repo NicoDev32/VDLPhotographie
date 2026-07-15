@@ -10,6 +10,12 @@ module.exports = {
 
   target: 'static',
 
+  // Expose les variables d'env au bundle client (Nuxt n'inline pas les VUE_APP_* comme le faisait Vue CLI).
+  // La valeur est fournie par Vercel au moment du build.
+  env: {
+    VUE_APP_ROUTE_POST_CONTACT: process.env.VUE_APP_ROUTE_POST_CONTACT,
+  },
+
   server: {
     host: '0.0.0.0',
     port: 3000,
